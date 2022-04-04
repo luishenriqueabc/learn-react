@@ -4,7 +4,7 @@ Este projeto foi criado com  [Create React App](https://github.com/facebook/crea
 
 ## Descriçao 
 
-Site sobre pontos turísticos do Brasil
+Site sobre pontos turísticos do Brasil.
 
 ## Contatos 
 [Facebook](FB.LUIS.HENRIQUE)
