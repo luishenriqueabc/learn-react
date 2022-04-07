@@ -2,10 +2,10 @@ import "./Menu.css";
 
 const Menu = () => {
     return (
-        <div className = "Menu">
-            <ul>
-                <li> </li>
-            </ul>
+        <div className = "menu">
+                <li>HOME</li>
+                <li>CONTATO</li>
+                <input type="text" placeholder="Buscar"></input>
         </div>
     )
 };
