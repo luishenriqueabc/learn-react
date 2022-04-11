@@ -5,9 +5,9 @@ const Logo = () => {
         
     <div className="Logo1">
         
-            <h1>Turistic</h1>
+            <h1>T</h1>
 
-            <spam><h1>Turistic</h1></spam>
+            <spam><h1>T</h1></spam>
 
         </div>
     )
