@@ -1,9 +1,8 @@
 
 import './App.css';
 import Header from "./components/Header";
-import Logo from "./components/Logo";
-import Menu from "./components/Menu";
 import Main from "./components/Main";
+// import Footer from "./components/Footer";
 // import ApiRequest from './components/ApiRequest';
 
 
@@ -13,14 +12,9 @@ function App() {
   <>
          <Header />
          <Main />
-         {/*<ApiRequest />*/}
-     
+         {/* <Footer /> */}
+         {/*<ApiRequest />*/}   
   </>
          )
-
-
 };
-
-
-
 export default App;

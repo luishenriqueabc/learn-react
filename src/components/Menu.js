@@ -4,9 +4,9 @@ const Menu = () => {
     return (
         <div className = "menu">
                 <li>HOME</li>
-                <li>CONTATO</li>
-                <input type="text" placeholder="Buscar"></input>
-                <icon></icon>
+                <li>CONTATOS</li>
+                <input type="text" placeholder="   Buscar.."></input>
+                <icon> </icon>
         </div>
     )
 };

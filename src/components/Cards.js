@@ -5,7 +5,7 @@ const Cards = () => {
         <div className="card1">
         <img src=""></img>
         <h1>Sao Paulo</h1>
-        <p>ajnxcsdancoajcoacnacnioacnoanodnaosdnoajdojaidjijadiajdop</p>
+        <p>a</p>
         </div>
     );
 };

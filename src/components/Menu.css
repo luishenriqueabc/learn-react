@@ -1,0 +1,25 @@
+.menu{
+    color:white;
+    display:flex;
+    gap:2px;
+    list-style: none;
+    height:60px;
+    width:90%;
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: left;
+    background-color:black;
+    border-radius: 30px;
+}
+.menu li{
+    padding-left:20px;
+    font-size:25px;
+}
+input{
+    margin-left:30px;
+    padding-left:10px;
+    width:50%;
+    height:30px;
+    border-radius: 30px;
+}

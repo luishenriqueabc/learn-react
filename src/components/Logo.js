@@ -1,14 +1,11 @@
 import "./Logo.css";
+import logo from "../assets/img/logo22.jpg"
 
 const Logo = () => {
     return (
         
     <div className="Logo1">
-        
-            <h1>T</h1>
-
-            <spam><h1>T</h1></spam>
-
+        <img src= {logo} />
         </div>
     )
 };
