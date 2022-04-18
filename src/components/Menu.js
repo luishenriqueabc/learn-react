@@ -1,12 +1,13 @@
 import "./Menu.css";
 
+
 const Menu = () => {
     return (
         <div className = "menu">
                 <li>HOME</li>
                 <li>CONTATOS</li>
                 <input type="text" placeholder="   Buscar.."></input>
-                <icon> </icon>
+                <icon> FaSearch</icon>
         </div>
     )
 };

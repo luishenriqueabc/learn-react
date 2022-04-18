@@ -1,19 +1,19 @@
-import "./Rodape.css";
-import logo from "../assets/img/logo22.jpg"
+// import "./Rodape.css";
+// import logo from "../assets/img/logo22.jpg"
 
-const Rodape = () => {
-    return(
+// const Rodape = () => {
+//     return(
 
-        <>
-        <div className="imgg">
-        <img src={logo} />
-        </div>
+//         <>
+//         <div className="imgg">
+//         <img src={logo} />
+//         </div>
 
-        <div className="copy">
-            <p>Copyright</p>
-        </div>
-        </>
-    );
-};
+//         <div className="copy">
+//             <p>Copyright</p>
+//         </div>
+//         </>
+//     );
+// };
 
-export default Rodape;
+// export default Rodape;
