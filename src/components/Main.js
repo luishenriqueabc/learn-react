@@ -1,14 +1,11 @@
-import "./Main.css";
-import Cards from "./Cards";
+import './Main.css';
+import Cards from './Cards.js';
 
-const Main = () => {
-    return (
-        <Cards />
-       
-    );
+const Main = () =>{
+    return(
+        <>
+            <Cards />
+        </>
+    )
 };
-
-
-
-
 export default Main;

@@ -1,15 +1,16 @@
-import "./Header.css" ;
-import Logo from "./Logo.js";
-import Menu from "./Menu.js";
+import './Header.css';
+import Logo from './Logo.js';
 
 
-const Header = () => {
-    return (
-        <header>
-            <Logo />
-            <Menu />
-        </header>
+const Header = () =>{
+    return(
+        <>
+        <Logo />
+        </>
     )
+
 };
 
 export default Header;
+
+ 
