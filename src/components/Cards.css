@@ -1,0 +1,26 @@
+.cardsp{
+    margin:30px 35px;
+    width:1300px;
+    height:auto;
+    background-color: #C4C4C4;
+    border-radius:20px;
+   
+}
+.cardspinfo img{
+    
+}
+.SPletters h3{
+    text-align: center;
+    font-size:30px;
+    padding-left:auto;
+    padding-right:auto;
+    font-family: sans-serif;
+    font-weight:100;
+    padding-bottom:30px;
+}
+.text p{
+    padding:0 20%;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight:100;
+}
