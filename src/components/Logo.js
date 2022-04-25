@@ -1,5 +1,5 @@
 import './Logo.css';
-// import Lupa from './assets/lupa.png';
+import Lupa from '../assets/lupa.png';
 
 const Logo = () => {
     return(
@@ -10,7 +10,7 @@ const Logo = () => {
                 <a href="#"><li>CONTATOS</li></a>
             </ul>
             <input class="text" placeholder="Pesquise um ponto turístico.."></input>
-            {/* <img src={Lupa} alt="luislindo" /> */}
+            <img src={Lupa} alt="luislindo" />
         </div>
     )
 };
