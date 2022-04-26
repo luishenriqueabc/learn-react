@@ -9,7 +9,7 @@ const Logo = () => {
                 <a href="#"><li>HOME</li></a>
                 <a href="#"><li>CONTATOS</li></a>
             </ul>
-            <input class="text" placeholder="Pesquise um ponto turístico.."></input>
+            <input type="text" placeholder="Pesquise um ponto turístico.."></input>
             <img src={Lupa} alt="luislindo" />
         </div>
     )
