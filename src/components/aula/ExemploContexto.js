@@ -1,9 +1,9 @@
-import FilhoContexto from "./FilhoContexto";
+// import FilhoContexto from "./FilhoContexto";
 
-const ExemploContexto = () => { 
-    return (
-      <FilhoContexto />
-    );
-  }
+// const ExemploContexto = () => { 
+//     return (
+//       <FilhoContexto />
+//     );
+//   }
   
-export default ExemploContexto;
+// export default ExemploContexto;

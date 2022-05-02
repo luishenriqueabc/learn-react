@@ -2,16 +2,19 @@
 import './App.css';
 import Header from './components/Header.js';
 import Main from './components/Main.js';
-
-
+// import { Routes, Route} from "react-router-dom";
+// import APIIntegration from './components/aula/APIIntegration';
 
 
 
 function App() {
   return ( 
   <>
-  <Header />
-  <Main />
+    <Header />
+    <Main />
+    {/* <Routes>
+      <Route path="/" element={<APIIntegration />} />
+    </Routes> */}
   </>
          )
 };

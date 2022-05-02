@@ -1,35 +1,34 @@
-import BemVindo from "./BemVindo.js";
-import './UsandoProps.css';
+// import './UsandoProps.css';
 
-const UsandoProps = () => {
-    const user = [
-        {
-        id: 123,
-        name: "Luis",
-        lastname: "Henrique",
-        avatar: "#",
-        status: "Transformando.."
-    },
-{
-    id: 1234,
-    name: "Luis",
-    lastname: "Henrique",
-    avatar: "#",
-    status: "Transformando.."
+// const UsandoProps = () => {
+//     const user = [
+//         {
+//         id: 123,
+//         name: "Luis",
+//         lastname: "Henrique",
+//         avatar: "#",
+//         status: "Transformando.."
+//     },
+// {
+//     id: 1234,
+//     name: "Luis",
+//     lastname: "Henrique",
+//     avatar: "#",
+//     status: "Transformando.."
 
-},];
+// },];
 
-return(
-    <div className="listusers">
-    {user &&
-    user.map(
-        (user) => {
-            return <CardUser {...user} />
-        }
-    )
-}
-</div>
-)
-    }
+// return(
+//     <div className="listusers">
+//     {user &&
+//     user.map(
+//         (user) => {
+//             return < {...user} />
+//         }
+//     )
+// }
+// </div>
+// )
+//     }
 
-export default UsandoProps;
+// export default UsandoProps;

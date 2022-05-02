@@ -1,13 +1,25 @@
 import './Cards.css';
 import SP from '../assets/SP.jpg';
+import {Carousel} from 'react-bootstrap';
+import {useState} from 'react';
 
+// import SP2 from './src/assets/sp.j';
 
 const Cards = () =>{
-    return(
-        <div className="cardsp">
-            <div className="cardspinfo ">
+    function ControlledCarousel() {
+        const [index, setIndex] = useState(0);
       
+        const handleSelect = (selectedIndex, e) => {
+          setIndex(selectedIndex);
+        }
+        };
+    return(
+        <div className="Cardpai">
+        <div className="Carouselcard">
+
+    
             </div>
+
                 <div className="SPletters">
                 <h3>São Paulo</h3>
                 <div className="text">
