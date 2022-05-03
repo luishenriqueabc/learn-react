@@ -6,8 +6,8 @@ const Logo = () => {
         <div className="superior">
             <h1>Turistic</h1>
             <ul>
-                <a href="#"><li>HOME</li></a>
-                <a href="#"><li>CONTATOS</li></a>
+                <li><a href="#">HOME</a></li>
+               <li> <a href="#">CONTATOS</a></li>
             </ul>
             <input type="text" placeholder="Pesquise um ponto turístico.."></input>
             <img src={Lupa} alt="luislindo" />

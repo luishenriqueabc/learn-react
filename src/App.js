@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './components/Header.js';
 import Main from './components/Main.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Routes, Route} from "react-router-dom";
 // import APIIntegration from './components/aula/APIIntegration';
 
