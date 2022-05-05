@@ -1,12 +1,13 @@
 import './Main.css';
 import Cards from './Cards.js';
-// import APIIntegration from './aula/APIIntegration';
+import FigureController from './Figure';
 
 const Main = () =>{
     return(
     <>
     <Cards />
-    {/* <APIIntegration /> */}
+    <FigureController/>
+    
     </>
     )
 };
