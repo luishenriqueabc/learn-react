@@ -4,10 +4,10 @@ import Cards from './Cards.js';
 
 const Main = () =>{
     return(
-        <>
-            <Cards />
-            {/* <APIIntegration /> */}
-        </>
+    <>
+    <Cards />
+    {/* <APIIntegration /> */}
+    </>
     )
 };
 export default Main;

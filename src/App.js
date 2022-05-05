@@ -11,11 +11,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return ( 
   <>
-    <Header />
-    <Main />
-    {/* <Routes>
-      <Route path="/" element={<APIIntegration />} />
-    </Routes> */}
+  <Header />
+  <Main />
+  {/* <Routes>
+  <Route path="/" element={<APIIntegration />} />
+  </Routes> */}
   </>
          )
 };

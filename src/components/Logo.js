@@ -7,7 +7,7 @@ const Logo = () => {
             <h1>Turistic</h1>
             <ul>
                 <li><a href="#">HOME</a></li>
-               <li> <a href="#">CONTATOS</a></li>
+                <li> <a href="#">CONTATOS</a></li>
             </ul>
             <input type="text" placeholder="Pesquise um ponto turístico.."></input>
             <img src={Lupa} alt="luislindo" />

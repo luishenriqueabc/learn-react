@@ -19,13 +19,11 @@
 }
 .superior ul li a{
     text-decoration: none;
-    color:black;
-    
+    color:black; 
 }
 .superior ul li a:hover{
     border-bottom: 2px solid black;
 }
-
 .superior ul li{
     list-style: none;
     padding-top:48px;
@@ -39,7 +37,6 @@
     margin-left: 30px;
     border-radius: 20px;
 }
-
 textarea:focus, input:focus {
     box-shadow: 0 0 0 0;
     outline:0;
