@@ -1,6 +1,9 @@
 import {Figure} from 'react-bootstrap';
 import './Figure.css';
-import ceara from '../assets/ceara.jpeg';
+import ama from '../assets/ama.jpeg';
+import bh from '../assets/bh.jpeg';
+import camp from '../assets/camp.jpeg';
+import minas from '../assets/minas.jpeg';
 const FiguresController = () =>{
     return(
 <>
@@ -10,12 +13,14 @@ const FiguresController = () =>{
     <Figure.Image
       width={500}
       height={180}
-      src={ceara}
+      src={minas}
       alt="171x180"
     />
+    <div className='letras'>
     <Figure.Caption>
-      Minas
+      Minas Gerais
     </Figure.Caption>
+    </div>
   </Figure>
 
   <Figure>
@@ -23,11 +28,13 @@ const FiguresController = () =>{
       width={500}
       height={400}
       alt="171x180"
-      src={ceara}
+      src={ama}
     />
+     <div className='letras'>
     <Figure.Caption>
-    Ceara
+    Amazonas
     </Figure.Caption>
+    </div>
   </Figure>
 
   <Figure>
@@ -35,11 +42,13 @@ const FiguresController = () =>{
       width={500}
       height={180}
       alt="171x180"
-      src={ceara}
+      src={camp}
     />
+     <div className='letras'>
     <Figure.Caption>
-    Cear
+    Campos do Jordão
     </Figure.Caption>
+    </div>
   </Figure>
 
   <Figure>
@@ -47,11 +56,13 @@ const FiguresController = () =>{
       width={500}
       height={180}
       alt="171x180"
-      src={ceara}
+      src={bh}
     />
+     <div className='letras'>
     <Figure.Caption>
-    Ceara
+    Belo Horizonte
     </Figure.Caption>
+    </div>
   </Figure>
   </div>
 </div>

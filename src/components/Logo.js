@@ -13,7 +13,7 @@ const Logo = () => {
                     </Link>
                     </li>
                 <li>
-                    <Link to='/'>
+                    <Link to='/contatos'>
                         CONTATOS
                     </Link>
                     
