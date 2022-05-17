@@ -3,30 +3,30 @@ import face from '../assets/face.png';
 
 const Contact = () =>{
     return(
-       <>
-       <div className='contato1'>
-           <img src={face} 
-           width='80' height="80"/>
-           <div className='lett'>
-           
-            <h1>AAAAA</h1>
+        <div className='bc'>
+            <div className='tudo'>
+                <img src={face} width='80' height='80'/>
+                <div className='bcg'>
+                <h3>Face</h3>
+                </div>
+            </div>
+
+            <div className='tudo'>
+                <img src={face} width='80' height='80'/>
+                <div className='bcg'>
+                <h3>Face</h3>
+                </div>
+            </div>
+
+            <div className='tudo'>
+                <img src={face} width='80' height='80'/>
+                <div className='bcg'>
+                <h3>Face</h3>
+                </div>
+            </div>
+
         </div>
 
-<img src={face} 
-width='80' height="80"/>
-<div className='lett2'>
-
- <h1>AAAAA</h1>
-</div>
-
-
-
-    <img src={face}
-        width='80' height="80" /><div className='lett3'>
-            <h1>AAAAA</h1>
-        </div>
-</div>
-</>
 
     )
 }

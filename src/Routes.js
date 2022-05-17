@@ -5,7 +5,7 @@ import PaginaContatos from './components/pages/paginaContatos';
 const Routers = () => {
     return(
     <Routes>
-        <Route path="/" element={<PaginaHome />} />
+        {/* <Route path="/" element={<PaginaHome />} /> */}
         <Route path="/contatos" element={<PaginaContatos />} />
     </Routes>          
     );

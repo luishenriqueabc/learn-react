@@ -6,7 +6,7 @@
 //         const [users, setUsers] = useState(null);
         
 //         useEffect(() => {
-//             fetch("http://localhost/lp2/api/user/select-all")
+//             fetch("http://localhost/lp2/api/pontos/select-all")
 //                 .then((response) => response.json())
 //                 .then((data) => setUsers(data));
 //         }, []);
@@ -14,7 +14,7 @@
 //         const handleTrashClick = (userId) => {
 //           const formData = new FormData();
 //           formData.append('id', userId);
-//           const urlDelete = "http://localhost/lp2/api/user/delete";
+//           const urlDelete = "http://localhost/lp2/api//delete";
 //           fetch(urlDelete, {
 //             method: 'POST',
 //             body: formData
