@@ -3,7 +3,7 @@ import Contacts from './Contacts';
 
 const MainC = () =>{
     return(
-        <Contacts />
+        <Contacts/>
     )
 }
 export default MainC;

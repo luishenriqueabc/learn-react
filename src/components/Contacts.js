@@ -1,5 +1,6 @@
 import './Contacts.css';
 import face from '../assets/face.png';
+import { Link } from 'react-router-dom';
 
 const Contact = () =>{
     return(

@@ -2,7 +2,6 @@ import './LogoContatos.css';
 import Lupa from '../assets/lupa.png';
 import { Link } from 'react-router-dom';
 
-
 const LogoC = () => {
     return(
         <div className="superior">
