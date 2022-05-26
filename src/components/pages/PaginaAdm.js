@@ -1,13 +1,11 @@
 import APIIntegration from "../aula/APIIntegration";
-import EditPontos from "../aula/EditPontos";
-import EditPontosOnChange from "../aula/EditPontosOnChange";
+// import EditPontos from "../aula/EditPontos";
 
 const PaginaADM = () =>{
     return(
         <>
         <APIIntegration/>
-        <EditPontos/>
-        <EditPontosOnChange/>
+        {/* <EditPontos/> */}
         </>
     )
 }

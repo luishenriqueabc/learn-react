@@ -14,6 +14,7 @@ import {TiEdit as IconEdit} from 'react-icons/ti'
             fetch("http://localhost/lp2/api/pontos/select-all")
                 .then((response) => response.json())
                 .then((data) => setPontos(data));
+               
         }, []);
         
         const handleTrashClick = (pontosId) => {
@@ -43,6 +44,7 @@ import {TiEdit as IconEdit} from 'react-icons/ti'
                   <div key={pontos.id}>
                     <h1>{pontos.name}</h1>
                     <p>{pontos.sobre}</p>
+                    <p>{pontos.fotos}</p>
                     <IconTrash 
               onClick={() => handleTrashClick(pontos.id)}
               style={{cursor: 'pointer'}}
@@ -50,7 +52,6 @@ import {TiEdit as IconEdit} from 'react-icons/ti'
             <IconEdit 
               onClick={() => navigate('edit/'+pontos.id)} 
               style={{cursor: 'pointer'}}>
-
               </IconEdit>
                
                   </div>
