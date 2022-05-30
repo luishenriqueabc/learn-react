@@ -7,6 +7,18 @@ import Form from './Form';
 
 
 const Cards = () =>{
+
+    const [pontos, setPontos] = useState(null)
+    const navigate = useNavigate();
+
+    useEffect(() =>{
+        fetch("http://localhost/LP2/api/pontos/select-all")
+        .then((response) => response.json())
+        .then((data) => setPontos(data))
+    
+    }, [])    
+
+
     return(
     <>
     <div className="cardsp">

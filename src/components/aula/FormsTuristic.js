@@ -1,4 +1,5 @@
 import { useRef, useEffect} from 'react'
+import './FormsTuristic.css';
 
 const FormPontos = ({pontos, setPontos}) => {
 
