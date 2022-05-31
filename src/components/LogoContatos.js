@@ -1,21 +1,20 @@
-import './Logo.css';
+import './LogoContatos.css';
 import Lupa from '../assets/lupa.png';
 import { Link } from 'react-router-dom';
 
-
-const Logo = () => {
+const LogoC = () => {
     return(
         <div className="superior">
             <h1>Turistic</h1>
             <ul>
-                <li className='home'>
+                <li>
                     <Link 
                     to='/'
                     >
                         HOME
                     </Link>
                     </li>
-                <li>
+                <li className='cont'>
                     <Link 
                     to='/contatos'
                     >
@@ -29,5 +28,4 @@ const Logo = () => {
         </div>
     )
 };
-export default Logo;
-
+export default LogoC;

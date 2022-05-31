@@ -1,0 +1,19 @@
+.abrevi {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.abrevi h1{
+    width:300px;
+    background-color:#949090;
+    text-align: center;
+    border-radius: 20px;
+    font-size:30px;
+    font-weight:400;
+    font-family: sans-serif;
+    margin:20px 0;
+  
+}

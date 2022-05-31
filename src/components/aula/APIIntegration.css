@@ -1,0 +1,9 @@
+.cs{
+    display:flex;
+    gap:80px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}

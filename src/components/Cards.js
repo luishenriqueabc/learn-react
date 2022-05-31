@@ -3,50 +3,52 @@ import SP from '../assets/pexels.jpeg';
 import ControlledCarousel from './Carousel';
 import ControlledCarouselrj from './Carouselrj';
 import Form from './Form';
+import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom'
 
 
 
 const Cards = () =>{
+
+    const [pontos, setPontos] = useState(null)
+    const navigate = useNavigate();
+
+    useEffect(() =>{
+        fetch("http://localhost/LP2/api/pontos/select-all")
+        .then((response) => response.json())
+        .then((data) => setPontos(data))
+    
+    }, [])    
+
+
     return(
         <>
-        <div className="cardsp">
-            <div className="cardspinfo ">
-            <ControlledCarousel />
-            <div className="SPletters">
-                <h3>São Paulo</h3>
-            <div className="text">
-                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
-            </div>
-            </div>
-            
+            {pontos &&
+              pontos.map((pontos) => {
+                return (
+                    <div className="cardrj">
+                    <ControlledCarousel />
+                  <div key={pontos.id}>
+                      <div className="SPletters">
+                    <h3>{pontos.name}</h3>
+                    </div>
+                    <div className="text">
+                    <p>{pontos.sobre}</p>
+                    </div>
+                </div>
             {/* area de comentarios */}
-        <div className='coment'>
-            <Form />
-
-       
-        </div>
-        </div>
-        </div>
-       
-<div className="cardrj">
-    <div className="cardrjinfo ">
-    <ControlledCarouselrj />
-    <div className="RJletters">
-        <h3>Rio de Janeiro</h3>
-    <div className="textrj">
-        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
-    </div>
-    </div>
-    
-    {/* area de comentarios */}
-<div className='comentrj'>
-    <Form />
+            <div className='coment'>
+                    <Form />
+                    </div>
 
 
-</div>
-</div>
-</div>
-</>
+
+                    </div>
+                )
+                
+              })
+            }
+            </>
     )
-};
+}
 export default Cards;

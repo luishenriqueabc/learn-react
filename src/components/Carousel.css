@@ -1,13 +1,13 @@
 .carousel img{
-   width:30%;
-   border-radius: 20px;
-   height:auto;
-   margin:30px auto;
+width:30%;
+border-radius: 20px;
+height:auto;
+margin:30px auto;
 }
 .carousel{
-    width:100%;
-    height:auto;
+width:100%;
+height:auto;
 }
 .carousel button {
-    margin:30px;
+margin:30px;
 }

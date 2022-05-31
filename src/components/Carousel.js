@@ -13,7 +13,7 @@ function ControlledCarousel() {
     };
   
     return (
-          <div className='carousel'> 
+      <div className='carousel'> 
         <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item >
           <img
@@ -40,7 +40,7 @@ function ControlledCarousel() {
          
         </Carousel.Item>
       </Carousel>
-      </div>
+    </div>
     );
   }
   
