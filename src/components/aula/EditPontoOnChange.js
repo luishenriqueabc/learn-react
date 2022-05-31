@@ -13,7 +13,7 @@ const EditPontoOnChange = () => {
         fetch("http://localhost/lp2/api/pontos/select-by-id/?id="+pontosId)
             .then((response) => {
                 if (response.ok) {
-                  return response.json();
+                return response.json();
                 }
                 throw new Error(response.statusText);
             })
@@ -54,7 +54,6 @@ const EditPontoOnChange = () => {
   
     return (
         <>
-        <h1></h1>
         {pontos? (
             <form onSubmit={(event) => handleSubmit(event)}>
                 <label>Nome:</label><input type="text" name="name" value={pontos.name} onChange={handleChange} />
