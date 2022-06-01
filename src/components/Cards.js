@@ -27,7 +27,7 @@ const Cards = () =>{
               pontos.map((pontos) => {
                 return (
                     <div className="cardrj">
-                    <ControlledCarousel />
+                    <ControlledCarousel idPost={pontos.id}/>
                   <div key={pontos.id}>
                       <div className="SPletters">
                     <h3>{pontos.name}</h3>
@@ -40,8 +40,6 @@ const Cards = () =>{
             <div className='coment'>
                     <Form />
                     </div>
-
-
 
                     </div>
                 )

@@ -1,6 +1,7 @@
 import {Form} from'react-bootstrap';
 import './Form.css';
-import { useRef, useEffect} from 'react'
+import { useRef, useEffect} from 'react';
+import CommentArea from './Commentarea';
 
 const FormController =({comment, setComment}) => {
   const emailRef = useRef();
@@ -33,17 +34,15 @@ const FormController =({comment, setComment}) => {
 
   
     return(
-      <Form className='wdt'>
-    <div className='ss '>
-      <Form.Label>Comentarios</Form.Label>
-    </div>
+      <>
     <form onSubmit={(event) => handleSubmit(event)}>
-      <label>Nome:</label><input ref={nameRef} type="text" name="name"/>
-      <label>Sobre:</label><input ref={sobreRef} type="text" name="sobre"/>
-      <label>Foto:</label><input ref={fotoRef} type="text" name="foto"/>
+      <label>Email:</label><input ref={emailRef} type="email" name="email"/>
+      <label>Comentario:</label><input ref={comentarioRef} type="text" name="comentario"/>
       <input type="submit" value="Enviar" />
     </form>
-    </Form>
+    <CommentArea/>
+    </>
+    
     )
 }
 export default FormController;

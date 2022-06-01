@@ -27,7 +27,7 @@ const FormPontos = ({pontos, setPontos}) => {
         sobreRef.current.value = ''
         fotoRef.current.value = ''
         nameRef.current.focus()
-        //alert(data.message)
+        alert(data.message)
         setPontos([data.pontos, ...pontos])
       });
   } 
