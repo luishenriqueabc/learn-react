@@ -14,7 +14,7 @@ const Cards = () =>{
     const navigate = useNavigate();
 
     useEffect(() =>{
-        fetch("http://localhost/LP2/api/pontos/select-all")
+        fetch("`http://localhost/lp2/api/pontos/select-by-id/?id=29")
         .then((response) => response.json())
         .then((data) => setPontos(data))
     
@@ -22,31 +22,11 @@ const Cards = () =>{
 
 
     return(
-        <>
-            {pontos &&
-              pontos.map((pontos) => {
-                return (
-                    <div className="cardrj">
-                    <ControlledCarousel idPost={pontos.id}/>
-                  <div key={pontos.id}>
-                      <div className="SPletters">
-                    <h3>{pontos.name}</h3>
-                    </div>
-                    <div className="text">
-                    <p>{pontos.sobre}</p>
-                    </div>
-                </div>
-            {/* area de comentarios */}
-            <div className='coment'>
-                    <Form />
-                    </div>
-
-                    </div>
-                )
-                
-              })
-            }
-            </>
+       
+            {pontos ? (
+            )
+            
+               
     )
 }
 export default Cards;
