@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
 import CommentArea from "../Commentarea";
+import './APIIntegrationComment.css';
 
 
     const APIIntegrationComment = () => {
@@ -39,10 +40,13 @@ import CommentArea from "../Commentarea";
             {comment &&
               comment.map((comment) => {
                 return (
-                  
+                  <div className="comment">
                   <div key={comment.id}>
+                    <div className="eme">
                     <h1>{comment.email}</h1>
+                    </div>
                     <p>{comment.comentario}</p>
+                </div>
                 </div>
                 )
               })
