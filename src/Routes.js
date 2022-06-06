@@ -10,7 +10,7 @@ const Routers = () => {
     <Routes>
         <Route path="/" element={<PaginaHome />} />
         <Route path="/contatos" element={<PaginaContatos />} />
-        <Route path="/create" element={<PaginaCreate/>} />
+        <Route path="/admin" element={<PaginaCreate/>} />
         <Route path="edit/:pontosId" element={<EditPontoOnChange />} />
         <Route path="commentadm" element={<PaginaCommentADM/>} />
 

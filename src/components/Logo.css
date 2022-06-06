@@ -2,48 +2,40 @@
     display:flex;
     padding:30px 3%;
     height:141px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c43a;
+    
+   
 }
 .superior h1{
     font-size:70px;
     letter-spacing: 15px;
     font-weight: 10;
-    padding-right: 80px;
+    padding-right: 30px;
+ 
 }
 .superior ul{
     display:flex;
     font-size:23px;
-    gap:15px;
+    gap:600px;
     letter-spacing: 5px; 
+   
+  
    
 }
 .superior ul li a{
     text-decoration: none;
     color:black; 
+    
 }
 
 .superior ul li{
     list-style: none;
     padding-top:48px;
     font-weight:400;
+   
+  
 }
-.superior input{
-    border: 0;
-    width:40%;
-    height:27px;
-    margin-top:53px;
-    margin-left: 30px;
-    border-radius: 20px;
-}
-textarea:focus, input:focus {
-    box-shadow: 0 0 0 0;
-    outline:0;
-}
-.placeholder{
-    color:black;
-    font-family: sans-serif;
-    font-weight:lighter;
-}
+
 .superior img{
     width:13px;
     height:13px;
@@ -52,5 +44,4 @@ textarea:focus, input:focus {
 .home{
     text-decoration: underline;
 }
-
 

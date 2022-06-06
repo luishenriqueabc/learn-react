@@ -24,8 +24,6 @@ const Logo = () => {
                     
                 </li>
             </ul>
-            <input type="text" placeholder="     Pesquise um ponto turístico.."></input>
-            <img src={Lupa} alt="luislindo" />
         </div>
     )
 };

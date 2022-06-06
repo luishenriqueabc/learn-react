@@ -38,7 +38,9 @@ import "./APIIntegration.css";
         
         return (
             <>
+            <div className="form">
             <FormsTuristic setPontos={setPontos} pontos={pontos}/>
+            </div>
             <div className='cs'>
             {pontos &&
               pontos.map((pontos) => {
@@ -46,7 +48,8 @@ import "./APIIntegration.css";
                   <div key={pontos.id}>
                     <h1>{pontos.name}</h1>
                     <p>{pontos.sobre}</p>
-                    <p>{pontos.foto}</p>
+                    <p>{pontos.pertence}</p>
+                    <p>{pontos.quantaspessoas}</p>
                     <IconTrash onClick={() => handleTrashClick(pontos.id)}
               style={{cursor: 'pointer'}}
               />

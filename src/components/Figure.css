@@ -8,7 +8,7 @@
 
 }
  .abxc{
-    background-color: #C4C4C4;
+   
     border-radius: 20px;
 }
 .abxc .figur .letras{
@@ -32,7 +32,8 @@ padding-bottom:20px;
 .figure-img {
     margin-bottom:0;
     line-height: 1;
-    border-radius: 30px;;
+    border-radius: 30px;
+    width:90px;
 }
 figure {
     margin:0;

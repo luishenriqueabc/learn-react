@@ -27,9 +27,10 @@ const EditPontoOnChange = () => {
         event.preventDefault()
         const formData = new FormData()
         formData.append('id', pontosId)
-        formData.append('name', event.target[0].value)
-        formData.append('sobre', event.target[1].value)
-        formData.append('foto', event.target[2].value)
+        formData.append('name', event.target[0].value);
+        formData.append('sobre', event.target[1].value);
+        formData.append('pertence', event.target[1].value);
+        formData.append('quantaspessoas', event.target[1].value);
         fetch(
             "http://localhost/lp2/api/pontos/update",
             {method: 'POST', body: formData}
@@ -57,8 +58,10 @@ const EditPontoOnChange = () => {
         {pontos? (
             <form onSubmit={(event) => handleSubmit(event)}>
                 <label>Nome:</label><input type="text" name="name" value={pontos.name} onChange={handleChange} />
-                <label>Sobre:</label><input type="sobre" name="sobre"  value={pontos.sobre} onChange={handleChange} />
-                <label>Foto:</label><input type="text" name="foto"  value={pontos.foto} onChange={handleChange} />
+                <label>Sobre:</label><input type="text" name="sobre"  value={pontos.sobre} onChange={handleChange} />
+                <label>Pertence a qual cidade?:</label><input type="text" name="pertence" value={pontos.pertence} onChange={handleChange} />
+                <label>Quantas pessoas vão lá?:</label><input type="text" name="quantaspessoas"  value={pontos.quantaspessoas} onChange={handleChange} />
+              
                 <input type="submit" value="Editar" />
             </form>
             )

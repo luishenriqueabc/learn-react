@@ -1,9 +1,15 @@
 .cs{
     display:flex;
-    gap:80px;
+    gap:100px;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     background-color: antiquewhite;
     font-family: sans-serif;
+}
+.form{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 600px;
+
 }

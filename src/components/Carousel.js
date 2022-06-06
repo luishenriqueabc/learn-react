@@ -1,9 +1,9 @@
 import './Carousel.css';
 import {Carousel} from 'react-bootstrap';
 import {useState } from 'react';
-import imagem from '../assets/pexels.jpeg';
-import idm from '../assets/idm.jpeg';
-import ida from '../assets/ida.jpeg';
+import {useEffect } from 'react';
+import teste from '../assets/teste.jpeg';
+
 
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
@@ -18,14 +18,14 @@ function ControlledCarousel() {
         <Carousel.Item >
           <img
             className="d-block"
-            src={imagem}
+            src={teste}
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            src={idm}
+            src={teste}
             alt="Second slide"
           />
 
@@ -33,7 +33,7 @@ function ControlledCarousel() {
         <Carousel.Item>
           <img
             className="d-block"
-            src={ida}
+            src={teste}
             alt="Third slide"
           />
   

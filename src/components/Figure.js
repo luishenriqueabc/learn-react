@@ -1,10 +1,15 @@
 import {Figure} from 'react-bootstrap';
 import './Figure.css';
-import ama from '../assets/ama.jpeg';
-import bh from '../assets/bh.jpeg';
-import camp from '../assets/camp.jpeg';
-import minas from '../assets/minas.jpeg';
+import teste from '../assets/teste.jpeg';
 const FiguresController = () =>{
+
+
+
+
+
+
+
+
     return(
 <>
 <div className="abxc">
@@ -13,7 +18,7 @@ const FiguresController = () =>{
     <Figure.Image
       width={500}
       height={180}
-      src={minas}
+      src={teste}
       alt="171x180"
     />
     <div className='letras'>
@@ -28,7 +33,7 @@ const FiguresController = () =>{
       width={500}
       height={400}
       alt="171x180"
-      src={ama}
+      src={teste}
     />
      <div className='letras'>
     <Figure.Caption>
@@ -42,7 +47,7 @@ const FiguresController = () =>{
       width={500}
       height={180}
       alt="171x180"
-      src={camp}
+      src={teste}
     />
      <div className='letras'>
     <Figure.Caption>
@@ -56,7 +61,7 @@ const FiguresController = () =>{
       width={500}
       height={180}
       alt="171x180"
-      src={bh}
+      src={teste}
     />
      <div className='letras'>
     <Figure.Caption>
@@ -69,5 +74,4 @@ const FiguresController = () =>{
 </>
   )
 };
-
 export default FiguresController;
