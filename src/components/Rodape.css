@@ -4,6 +4,7 @@
     height:120px;
     margin-top: 40px;
     justify-content: center;
+    background-color: brown;
 }
 .superiorr h1{
     font-size: 50px;
@@ -11,4 +12,5 @@
     font-weight: 10;
     padding-right: 80px;
     padding: 0;
+    color:white;
 }

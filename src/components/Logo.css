@@ -1,8 +1,10 @@
 .superior{
+    width: 100%;
     display:flex;
     padding:30px 3%;
     height:141px;
-    background-color: #c4c4c43a;
+    background-color: brown;
+  
     
    
 }
@@ -11,6 +13,7 @@
     letter-spacing: 15px;
     font-weight: 10;
     padding-right: 30px;
+    color:white;
  
 }
 .superior ul{
@@ -24,7 +27,7 @@
 }
 .superior ul li a{
     text-decoration: none;
-    color:black; 
+    color:white; 
     
 }
 

@@ -6,7 +6,7 @@ const Nav = () =>{
         <>
       
         <div className='imagempro'>
-        <img src={Imagem} />
+        <img src={Imagem}/>
     </div>
 
     <div className='search'>
