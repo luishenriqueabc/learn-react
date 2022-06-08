@@ -2,9 +2,11 @@ import './Cards.css';
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
 import ControlledCarousel from './Carousel';
+import Form from './Form';
 
 const Cards = (PostId) =>{
     const [pontos, setPontos] = useState(null)
+    const [comment, setComment] = useState(null)
     const navigate = useNavigate();
 
     useEffect(() =>{
@@ -25,7 +27,9 @@ const Cards = (PostId) =>{
             <div className='card'>
             <ControlledCarousel postId={pontos.id}/>
             <div className='cardinfo'>
+              <div className='nome'>
               <h1>{pontos.name}</h1>
+              </div>
               <p>{pontos.sobre}</p>
               </div>
               <div className='pertence'>
@@ -39,9 +43,10 @@ const Cards = (PostId) =>{
               <div className='queriratela'>
                         <h3>Quer ir até lá?</h3>
                         <div className='Sim'>
-                            <a href='/'> <p>Sim</p></a>
+                        <a href='/'> <p>Quero!</p></a>
                         </div>
               </div>
+                <Form/>
               </div>
               </div>
               </>

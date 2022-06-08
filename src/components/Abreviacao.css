@@ -8,12 +8,13 @@
 
 .abrevi h1{
     width:300px;
-    background-color:#949090;
+    background-color:black;
     text-align: center;
     border-radius: 20px;
     font-size:30px;
     font-weight:400;
     font-family: sans-serif;
     margin:20px 0;
+    color: white;
   
 }

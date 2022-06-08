@@ -36,12 +36,20 @@ const FormController =({comment, setComment}) => {
     return(
       <>
     <form onSubmit={(event) => handleSubmit(event)}>
-      <label>Email:</label><input ref={emailRef} type="email" name="email"/>
-      <label>Comentario:</label><input ref={comentarioRef} type="text" name="comentario"/>
-      <input type="submit" value="Enviar" />
+      <div className="ema">
+      <input ref={emailRef} type="email" placeholder='Email..' name="email"/>
+      </div>
+      <div className='come'>
+      <input ref={comentarioRef} type="text" placeholder='Comentario..' name="comentario"/>
+      </div>
+      <div className='botao'>
+      <input type="submit" value="    Enviar    " />
+      </div>
     </form>
-    <CommentArea/>
+   
+    <CommentArea />
     </>
+    
     
     )
 }

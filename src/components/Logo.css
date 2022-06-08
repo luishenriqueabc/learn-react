@@ -3,35 +3,34 @@
     display:flex;
     padding:30px 3%;
     height:141px;
-    background-color: brown;
-  
-    
-   
+    background-color: rgba(46, 130, 255, 0.842);
+    color:white;
 }
 .superior h1{
     font-size:70px;
     letter-spacing: 15px;
     font-weight: 10;
     padding-right: 30px;
-    color:white;
+
  
 }
 .superior ul{
     display:flex;
     font-size:23px;
-    gap:600px;
-    letter-spacing: 5px; 
+    padding-left:600px;
+  
+
    
   
    
 }
-.superior ul li a{
+.superior ul  a{
     text-decoration: none;
-    color:white; 
+    color:white;
     
 }
 
-.superior ul li{
+.superior ul {
     list-style: none;
     padding-top:48px;
     font-weight:400;

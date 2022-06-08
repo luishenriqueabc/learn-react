@@ -46,6 +46,7 @@ import './APIIntegrationComment.css';
                     <h1>{comment.email}</h1>
                     </div>
                     <p>{comment.comentario}</p>
+                    
                 </div>
                 </div>
                 )

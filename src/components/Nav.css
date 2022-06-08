@@ -1,21 +1,26 @@
 .search input{
     border: 0;
     width:40%;
-    height:27px;
-    margin-top:53px;
     margin-left: 30px;
     border-radius: 20px;
     border-color:black;
+   margin-top: 20px;;
 }
 textarea:focus, input:focus {
-    box-shadow: 1 1 1 1;
-    outline:1;
+    box-shadow: 0 0 0 0;
+    outline:0;
 }
 .placeholder{
     color:black;
     font-family: sans-serif;
 }
 .imagempro img{
-    opacity: inherit;
+    opacity: 5;
     
+}
+.search{
+height:20px;
+text-align: center;
+align-items: center;
+padding-bottom: 15px;
 }

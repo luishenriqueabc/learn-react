@@ -43,6 +43,8 @@ import {BsTrash as IconTrash} from "react-icons/bs"
                   <div key={comment.id}>
                     <h1>{comment.email}</h1>
                     <p>{comment.comentario}</p>
+                    <p>{comment.comentario2}</p>
+                    <p>{comment.comentario3}</p>
                     <IconTrash onClick={() => handleTrashClick(comment.id)}
               style={{cursor: 'pointer'}}
               />
