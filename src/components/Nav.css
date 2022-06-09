@@ -15,8 +15,7 @@ textarea:focus, input:focus {
     font-family: sans-serif;
 }
 .imagempro img{
-    opacity: 5;
-    
+    width: 100%;
 }
 .search{
 height:20px;

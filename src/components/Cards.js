@@ -46,6 +46,9 @@ const Cards = (PostId) =>{
                         <a href='/'> <p>Quero!</p></a>
                         </div>
               </div>
+              <div className='comentariosss'>
+                <h1>Comentarios</h1>
+              </div>
                 <Form/>
               </div>
               </div>

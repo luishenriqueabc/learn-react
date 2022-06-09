@@ -1,13 +1,13 @@
 import './Nav.css';
-import Imagem from '../assets/image.png';
+import Imagem from '../assets/image.png'
 import lupa from '../assets/lupa.png';
 
 const Nav = () =>{
     return(
         <>
       
-        <div className='imagempro'>
-        <img src={Imagem}/>
+    <div className='imagempro'>
+        <img src={Imagem} alt="teste"/>
     </div>
 
     <div className='search'>

@@ -45,7 +45,10 @@ import './APIIntegrationComment.css';
                     <div className="eme">
                     <h1>{comment.email}</h1>
                     </div>
+                    <div className="comentario">
                     <p>{comment.comentario}</p>
+                    </div>
+                    
                     
                 </div>
                 </div>
