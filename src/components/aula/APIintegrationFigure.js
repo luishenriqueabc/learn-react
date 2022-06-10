@@ -51,7 +51,7 @@ import FormFigure from "./FormFigure";
                     <IconTrash onClick={() => handleTrashClick(figure.id)}
               style={{cursor: 'pointer'}}
               />
-            <IconEdit onClick={() => navigate('../edit/'+figure.id)}
+            <IconEdit onClick={() => navigate('../editt/'+figure.id)}
               style={{cursor: 'pointer'}}>
               </IconEdit>
                 </div>

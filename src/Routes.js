@@ -16,7 +16,7 @@ const Routers = () => {
         <Route path="edit/:pontosId" element={<EditPontoOnChange />} />
         <Route path="commentadm" element={<PaginaCommentADM/>} />
         <Route path="figureadm" element={<PaginaFigureAdm/>} />
-        <Route path="edit/:figureId" element={<EditFigureOnChange />} />
+        <Route path="editt/:figureId" element={<EditFigureOnChange />} />
 
     </Routes>          
     );
