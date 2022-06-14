@@ -1,4 +1,4 @@
-.figur{
+.ale{
     width: 100%;
     padding:20px 5%;
     justify-content: center;
@@ -6,37 +6,4 @@
     flex-wrap: wrap;
     gap:30px;
     margin-top:30px;
-
-}
- .abxc{
-   
-    border-radius: 20px;
-}
-.abxc .figur .letras{
-    display:flex;
-    font-family: sans-serif;
-    justify-content: center;
-   
-}
-.figure-caption {
-    font-weight:400;
-    font-size:25px;
-    color:#505152;
-    cursor: pointer;
-justify-items: center;
-padding-bottom:20px;
-
-}
-.figure-caption:hover{
-    text-decoration: underline;
-}
-.figure-img {
-    margin-bottom:0;
-    line-height: 1;
-    border-radius: 30px;
-    width:400px;
-}
-figure {
-    margin:0;
-    margin-left:30px;
 }

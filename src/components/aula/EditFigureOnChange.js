@@ -56,7 +56,7 @@ const EditFigureOnChange = () => {
         {figure? (
             <form onSubmit={(event) => handleSubmit(event)}>
                 <label>Foto:</label><input type="text" name="foto" value={figure.foto} onChange={handleChange} />
-                <label>Nome:</label><input type="text" name="foto2"  value={figure.nome} onChange={handleChange} />
+                <label>Nome:</label><input type="text" name="nome"  value={figure.nome} onChange={handleChange} />
               
               
                 <input type="submit" value="Editar" />

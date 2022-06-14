@@ -1,35 +1,35 @@
-import {Figure} from 'react-bootstrap';
+
 import './Figure.css';
-import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from "react";
-const FiguresController = () =>{
+const FiguresController = ({figureId}) =>{
 
   const [figure, setFigure] = useState(null);
-  const navigate = useNavigate();
+  
 
   
   useEffect(() => {
-      fetch("http://localhost/lp2/api/figure/select-all")
-          .then((response) => response.json())
-          .then((data) => setFigure(data));
-         
-  }, []);
-
+    fetch("http://localhost/LP2/api/figure/select-by-id/?id=" + figureId)
+    .then((response) => response.json())
+    .then((data) => setFigure(data))
+  }, [figureId])
+  
     return(
       <>
+      {figure && (
+        <>
+        <div key={figure.id}>
+          <img src={`/assets/${figure.foto}`} alt="pardinho gay"/>
+          <p>{figure.nome}</p>
+          </div>
+          <div className='2'>
+          <img src={`/assets/${figure.foto}`} alt="pardinho gay"/>
+          <p>{figure.nome}</p>
+          </div>
       
-      {figure &&
-        figure.map((figure) => {
-          return (
-            <div key={figure.id}>
-              <h1>{figure.foto}</h1>
-              <p>{figure.nome}</p>
-              </div>
-          )
-        })
-      }
-</>
-
+     </>
     )
+}
+</>
+)
 }
 export default FiguresController;
