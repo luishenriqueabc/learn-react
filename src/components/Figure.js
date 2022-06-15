@@ -1,6 +1,7 @@
 
 import './Figure.css';
 import { useEffect, useState } from "react";
+import {Figure} from 'react-bootstrap'
 const FiguresController = ({figureId}) =>{
 
   const [figure, setFigure] = useState(null);
@@ -16,17 +17,23 @@ const FiguresController = ({figureId}) =>{
     return(
       <>
       {figure && (
-        <>
-        <div key={figure.id}>
-          <img src={`/assets/${figure.foto}`} alt="pardinho gay"/>
-          <p>{figure.nome}</p>
-          </div>
-          <div className='2'>
-          <img src={`/assets/${figure.foto}`} alt="pardinho gay"/>
-          <p>{figure.nome}</p>
-          </div>
-      
-     </>
+          <>
+
+  <div className="figur">
+  <Figure>
+    <Figure.Image
+      src={`/assets/${figure.foto}`}
+      alt="171x180"
+    />
+    <div className='letras'>
+    <Figure.Caption>
+    <p>{figure.nome}</p>
+    </Figure.Caption>
+    </div>
+  </Figure>
+  </div>
+
+         </>
     )
 }
 </>

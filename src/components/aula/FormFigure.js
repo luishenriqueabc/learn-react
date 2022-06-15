@@ -30,9 +30,11 @@ const FormFigure = ({figure, setFigure}) => {
 
   return (
     <form onSubmit={(event) => handleSubmit(event)}>
+      <div className="all">
       <label>Foto:</label><input ref={fotoRef} type="text" name="foto"/>
-      <label>Foto2:</label><input ref={nomeRef} type="text" name="nome"/>
+      <label>Nome:</label><input ref={nomeRef} type="text" name="nome"/>
       <input type="submit" value="Enviar" />
+      </div>
     </form>
   )
 }

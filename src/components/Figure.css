@@ -1,9 +1,39 @@
-.ale{
+.figur{
     width: 100%;
-    padding:20px 5%;
+    padding:0 10%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
     margin-top:30px;
+
+}
+ .figur .letras{
+    display:flex;
+    font-family: sans-serif;
+    justify-content: center;
+
+}
+.figure-caption {
+    font-weight:400;
+    font-size:25px;
+    color:#505152;
+    cursor: pointer;
+justify-items: center;
+padding-bottom:20px;
+
+}
+.figure-caption:hover{
+    text-decoration: underline;
+}
+.figure-img {
+    margin-bottom:0;
+    line-height: 1;
+    border-radius: 30px;
+    width:800px;
+}
+figure {
+    margin:0;
+    margin-left:30px;
+    display: flex;
+    flex-wrap: wrap;
 }
