@@ -13,20 +13,25 @@
     }
     .nome{
         width:400px;
-        background-color:#2FCCC3 !important;
+        background-color:#00249c69 !important;
         border-radius: 20px;
         text-align: center;
-        font-size:30px;
+        font-size:50px;
         margin-left:auto;
         margin-right:auto;
         font-family: sans-serif;
         font-weight:100;
         padding-bottom:5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+
+        
+
         }
         .cardinfo p{
-       width:30%;
+       width:40%;
        margin-left:auto;
        margin-right:auto;
+       font-size:25px;
             
         }
 
@@ -35,10 +40,12 @@
     width:80%;
     height:auto;
     text-align:center;
+
     }
     .pertence h3{
     width:400px;
-    background-color:#2FCCC3 !important;
+    background-color:#00249c69!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
     text-align: center;
     font-size:30px;
@@ -50,11 +57,11 @@
     }
     .pertence p{
         text-align: center;
-        font-size:20px;
+        font-size:30px;
         padding-left:auto;
         padding-right:auto;
         font-family: sans-serif;
-        padding:30px 0;
+        padding:25px 0;
         
         }
 
@@ -70,7 +77,8 @@
 
             
         .quantas h3{
-            background-color:#2FCCC3 !important;
+            background-color:#00249c69!important;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
             border-radius: 20px;
             width:400px;
             text-align: center;
@@ -86,13 +94,11 @@
         .quantas p{
            
             text-align: center;
-            font-size:20px;
+            font-size:25px;
             padding-left:auto;
             padding-right:auto;
             font-family: sans-serif;
             padding:30px 0;
-           
-            
             }
             .queriratela{
                 margin:10px auto;
@@ -102,7 +108,8 @@
                 
             }
             .queriratela h3{
-                background-color:#2FCCC3 !important;
+                background-color:#00249c69!important;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
                 border-radius: 20px;
                 width:400px;
                 text-align: center;
@@ -116,6 +123,7 @@
                 }
                 .Sim{
                     background-color:white!important;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
                     width:80px;
                     height:30px;
                     margin-left:auto;

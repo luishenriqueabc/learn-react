@@ -1,7 +1,19 @@
-form{
-    text-align: center;
-    margin-top:15px ;
-}
-label{
+.aba{
+    float: left;
+    border:1px solid black;
     padding: 10px;
+    margin-left: auto;
+}
+.aba input{
+    border:1px solid black;
+    background-color: #00249c69;
+    width: 1200px;
+    margin-bottom: 30px;
+    height:60px;
+    border-radius: 20px;
+
+}
+.aba ::placeholder{
+    font-size: 20px;
+    color:white;
 }

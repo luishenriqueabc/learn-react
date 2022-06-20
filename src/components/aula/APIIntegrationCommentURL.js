@@ -40,12 +40,14 @@ import {BsTrash as IconTrash} from "react-icons/bs"
             {comment &&
               comment.map((comment) => {
                 return (
+                  <div className='comentarios' style={{backgroundColor:'rgb(46, 130, 255)', marginTop:'30px'}}>
                   <div key={comment.id}>
                     <h1>{comment.email}</h1>
                     <p>{comment.comentario}</p>
                     <IconTrash onClick={() => handleTrashClick(comment.id)}
               style={{cursor: 'pointer'}}
               />
+              </div>
                 </div>
                 )
               })

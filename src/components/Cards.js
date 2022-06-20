@@ -6,7 +6,6 @@ import Form from './Form';
 
 const Cards = (PostId) =>{
     const [pontos, setPontos] = useState(null)
-    const [comment, setComment] = useState(null)
     const navigate = useNavigate();
 
     useEffect(() =>{
@@ -43,7 +42,7 @@ const Cards = (PostId) =>{
               <div className='queriratela'>
                         <h3>Quer ir até lá?</h3>
                         <div className='Sim'>
-                        <a href='/'> <p>Quero!</p></a>
+                        <a href='https://www.decolar.com/pacotes/rio/pacotes-para-rio+de+janeiro?package_id=be8e62e9a1e10324e912bc3b3c22f49988055599591348c7598521b487e110fd&clickedPrice=BRL_1137&priceDate=1655724010474&searchId=d5036125d93c4692a56a44c822aeabe4'> <p>Quero!</p></a>
                         </div>
               </div>
               <div className='comentariosss'>

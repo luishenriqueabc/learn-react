@@ -30,9 +30,9 @@ const FormFigure = ({figure, setFigure}) => {
 
   return (
     <form onSubmit={(event) => handleSubmit(event)}>
-      <div className="all">
-      <label>Foto:</label><input ref={fotoRef} type="text" name="foto"/>
-      <label>Nome:</label><input ref={nomeRef} type="text" name="nome"/>
+      <div className="aba">
+     <input placeholder='Foto :'ref={fotoRef} type="text" name="foto"/>
+      <input placeholder='Nome :' ref={nomeRef} type="text" name="nome"/>
       <input type="submit" value="Enviar" />
       </div>
     </form>

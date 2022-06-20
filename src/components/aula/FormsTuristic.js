@@ -45,14 +45,14 @@ const FormPontos = ({pontos, setPontos}) => {
   } 
 
   return (
-    <form onSubmit={(event) => handleSubmit(event)}>
-      <label>Foto:</label><input ref={fotoRef} type="text" name="foto"/>
-      <label>Foto2:</label><input ref={foto2Ref} type="text" name="foto2"/>
-      <label>Foto3:</label><input ref={foto3Ref} type="text" name="foto3"/>
-      <label>Nome:</label><input ref={nameRef} type="text" name="name"/>
-      <label>Sobre:</label><input ref={sobreRef} type="text" name="sobre"/>
-      <label>Pertence a qual cidade?:</label><input ref={pertenceRef} type="text" name="pertence"/>
-      <label>Quantas pessoas vão até lá?:</label><input ref={quantaspessoasRef} type="text" name="quantaspessoas"/>
+    <form className='aba' onSubmit={(event) => handleSubmit(event)}>
+    <input placeholder='Foto:' ref={fotoRef} type="text" name="foto"/>
+    <input placeholder='Foto 2:' ref={foto2Ref} type="text" name="foto2"/>
+    <input  placeholder='Foto 3:'ref={foto3Ref} type="text" name="foto3"/>
+    <input placeholder='Nome:' ref={nameRef} type="text" name="name"/>
+      <input placeholder='Sobre:' ref={sobreRef} type="text" name="sobre"/>
+     <input placeholder='Pertence ?:'  ref={pertenceRef} type="text" name="pertence"/>
+     <input placeholder='Quantas pessoas ?:' ref={quantaspessoasRef} type="text" name="quantaspessoas"/>
       <input type="submit" value="Enviar" />
     </form>
   )

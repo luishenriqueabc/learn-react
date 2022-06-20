@@ -1,12 +1,14 @@
-.figur{
-    width: 100%;
-    padding:0 10%;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:30px;
 
-}
+    .figur{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+        margin-top:30px;
+    
+    }
+
  .figur .letras{
     display:flex;
     font-family: sans-serif;
@@ -18,9 +20,8 @@
     font-size:25px;
     color:#505152;
     cursor: pointer;
-justify-items: center;
-padding-bottom:20px;
-
+    justify-items: center;
+    padding-bottom:20px;
 }
 .figure-caption:hover{
     text-decoration: underline;
@@ -29,11 +30,14 @@ padding-bottom:20px;
     margin-bottom:0;
     line-height: 1;
     border-radius: 30px;
-    width:800px;
+    width:500px;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 figure {
     margin:0;
     margin-left:30px;
-    display: flex;
-    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
 }
