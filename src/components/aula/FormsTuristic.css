@@ -1,16 +1,21 @@
 .aba{
-    float: left;
+    display: flex;
+  flex-direction: column;
     border:1px solid black;
     padding: 10px;
-    margin-left: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
 }
 .aba input{
     border:1px solid black;
-    background-color: #00249c69;
-    width: 1200px;
+    background-color:  rgb(46, 130, 255);
+    width:200px;
     margin-bottom: 30px;
-    height:60px;
+    height:30px;
     border-radius: 20px;
+    color:white;
 
 }
 .aba ::placeholder{

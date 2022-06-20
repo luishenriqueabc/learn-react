@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import FormsTuristic from './FormsTuristic';
+import FormsPaginaTuristic from '../FormsPaginaTuristic';
 import {BsTrash} from "react-icons/bs";
 import { useNavigate } from 'react-router-dom'
 import {BsTrash as IconTrash} from "react-icons/bs"
@@ -39,7 +39,7 @@ import "./APIIntegration.css";
         return (
             <>
             <div className="form">
-            <FormsTuristic setPaginaPontos={setPaginaPontos} paginapontos={paginapontos}/>
+            <FormsPaginaTuristic setPaginaPontos={setPaginaPontos} paginapontos={paginapontos}/>
             </div>
             <div className='cs'>
             {paginapontos &&

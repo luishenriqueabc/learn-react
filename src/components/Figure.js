@@ -2,10 +2,12 @@
 import './Figure.css';
 import { useEffect, useState } from "react";
 import {Figure} from 'react-bootstrap'
+import {UseNavigate} from 'react-router-dom';
 const FiguresController = ({figureId}) =>{
 
   const [figure, setFigure] = useState(null);
-  
+
+
 
   
   useEffect(() => {

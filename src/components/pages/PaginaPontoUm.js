@@ -14,7 +14,7 @@ const PaginaUm = (postId) =>{
 
 
     useEffect(() => {
-        fetch("http://localhost/LP2/api/paginapontos/select-by-id/?id=2" + postId)
+        fetch("http://localhost/LP2/api/paginapontos/select-by-id/?id=3" + postId)
         .then((response) => response.json())
         .then((data) => setPaginaPontos(data))
       }, [postId])
