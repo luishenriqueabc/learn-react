@@ -6,9 +6,7 @@ import EditPontoOnChange from './components/aula/EditPontoOnChange';
 import PaginaCommentADM from './components/pages/PaginaCommentADM';
 import PaginaFigureAdm from './components/pages/PaginaFigureAdm';
 import EditFigureOnChange from './components/aula/EditFigureOnChange';
-import PaginaPontoUm from './components/pages/PaginaPontoUm';
-import PaginaPontosAdm from './components/pages/PaginaPontoAdm';
-import EditPaginaPontoOnChange from './components/aula/EditPaginaPontoOnChange';
+
 
 const Routers = () => {
     return(
@@ -20,9 +18,9 @@ const Routers = () => {
         <Route path="commentadm" element={<PaginaCommentADM/>} />
         <Route path="figureadm" element={<PaginaFigureAdm/>} />
         <Route path="editt/:figureId" element={<EditFigureOnChange />} />
-        <Route path="/Ponto" element={<PaginaPontoUm />} />
-        <Route path="/paginaadm" element={<PaginaPontosAdm />} />
-        <Route path="/edittt/:paginapontosId" element={<EditPaginaPontoOnChange />} />
+       
+      
+
 
 
     </Routes>          

@@ -28,7 +28,13 @@ const EditFigureOnChange = () => {
         const formData = new FormData()
         formData.append('id', figureId)
         formData.append('foto', event.target[0].value);
-        formData.append('nome', event.target[1].value);
+    formData.append('foto2', event.target[1].value);
+    formData.append('foto3', event.target[1].value)
+    formData.append('fotodofigure', event.target[1].value)
+    formData.append('nome', event.target[1].value);
+    formData.append('sobre', event.target[1].value);
+    formData.append('pertence', event.target[1].value);
+    formData.append('quantaspessoas', event.target[1].value);
         fetch(
             "http://localhost/lp2/api/figure/update",
             {method: 'POST', body: formData}
@@ -54,13 +60,20 @@ const EditFigureOnChange = () => {
     return (
         <>
         {figure? (
-            <form onSubmit={(event) => handleSubmit(event)}>
-                <label>Foto:</label><input type="text" name="foto" value={figure.foto} onChange={handleChange} />
-                <label>Nome:</label><input type="text" name="nome"  value={figure.nome} onChange={handleChange} />
-              
-              
-                <input type="submit" value="Editar" />
+            <>
+           <form className='aba' onSubmit={(event) => handleSubmit(event)}>
+           <label>Fotoo: </label> <input  ref={fotoRef} type="text" name="foto"/>
+           <label>Foto 2: </label> <input ref={foto2Ref} type="text" name="foto2"/>
+           <label>Foto 3: </label> <input  ref={foto3Ref} type="text" name="foto3"/>
+            <label>Foto do Figure: </label> <input  ref={fotodofigureRef} type="text" name="fotodofigure"/>
+           <label>Nome : </label> <input ref={nomeRef} type="text" name="nome"/>
+           <label>Sobre : </label> <input  ref={sobreRef} type="text" name="sobre"/>
+           <label>Pertence : </label> <input ref={pertenceRef} type="text" name="pertence"/>
+           <label>Quantas Pessoas ? : </label> <input ref={quantaspessoasRef} type="text" name="quantaspessoas"/>
+              <input type="submit" value="Enviar" />
             </form>
+            </>
+
             )
         : 
             (<p>Usuário não encontrado!</p>)

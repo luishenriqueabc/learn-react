@@ -39,7 +39,7 @@ import FormFigure from "./FormFigure";
         return (
             <>
             <div className="form">
-            <FormFigure setfigure={setFigure} figure={figure}/>
+            <FormFigure setFigure={setFigure} figure={figure}/>
             </div>
             <div className='cs'>
             {figure &&
@@ -47,7 +47,14 @@ import FormFigure from "./FormFigure";
                 return (
                   <div key={figure.id}>
                     <h1>{figure.foto}</h1>
-                    <p>{figure.nome}</p>
+                    <p>{figure.foto2}</p>
+                    <h2>{figure.foto3}</h2>
+                    <p>{figure.fotodofigure}</p>
+                    <h3>{figure.nome}</h3>
+                    <p>{figure.sobre}</p>
+                    <h1>{figure.pertence}</h1>
+                    <p>{figure.quantaspessoas}</p>
+                    
                     <IconTrash onClick={() => handleTrashClick(figure.id)}
               style={{cursor: 'pointer'}}
               />

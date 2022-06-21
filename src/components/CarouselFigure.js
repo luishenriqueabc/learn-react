@@ -4,9 +4,9 @@ import {useState } from 'react';
 import {useEffect } from 'react';
 // import teste from '../assets/teste.jpeg';
 
-function ControlledCarouselPaginaPonto({postId}) {
+function ControlledCarouselFigure({postId}) {
     const [index, setIndex] = useState(0);
-    const [paginaponto, setPaginaPontos] = useState(null);
+    const [figure, setFigure] = useState(null);
   
     
     const handleSelect = (selectedIndex, e) => {
@@ -15,22 +15,22 @@ function ControlledCarouselPaginaPonto({postId}) {
     };
 
     useEffect(() => {
-      fetch("http://localhost/LP2/api/paginapontos/select-by-id/?id=" + postId)
+      fetch("http://localhost/LP2/api/figure/select-by-id/?id=" + postId)
       .then((response) => response.json())
-      .then((data) => setPaginaPontos(data))
+      .then((data) => setFigure(data))
     }, [postId])
 
     return (
       <> 
-      {paginaponto && (
+      {figure && (
         <>
-        <div key={paginaponto.id}>
+        <div key={figure.id}>
         <div className='carousel'>
         <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item >
           <img
             className="d-block"
-            src={`/assets/${paginaponto.foto}`}
+            src={`/assets/${figure.foto}`}
             
             alt="First slide"
           />
@@ -38,7 +38,7 @@ function ControlledCarouselPaginaPonto({postId}) {
         <Carousel.Item >
           <img
             className="d-block"
-            src={`/assets/${paginaponto.foto2}`}
+            src={`/assets/${figure.foto2}`}
             
             alt="First slide"
           />
@@ -46,7 +46,7 @@ function ControlledCarouselPaginaPonto({postId}) {
         <Carousel.Item >
           <img
             className="d-block"
-            src={`/assets/${paginaponto.foto3}`}
+            src={`/assets/${figure.foto3}`}
             
             alt="First slide"
           />
@@ -61,4 +61,4 @@ function ControlledCarouselPaginaPonto({postId}) {
     </>
     );
   }
-  export default ControlledCarouselPaginaPonto ;
+  export default ControlledCarouselFigure;

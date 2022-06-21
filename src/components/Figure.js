@@ -2,10 +2,12 @@
 import './Figure.css';
 import { useEffect, useState } from "react";
 import {Figure} from 'react-bootstrap'
-import {UseNavigate} from 'react-router-dom';
+import {useNavigate, UseNavigate} from 'react-router-dom';
 const FiguresController = ({figureId}) =>{
 
   const [figure, setFigure] = useState(null);
+  const navigate = useNavigate();
+
 
 
 
@@ -24,12 +26,13 @@ const FiguresController = ({figureId}) =>{
   <div className="figur">
   <Figure>
     <Figure.Image
-      src={`/assets/${figure.foto}`}
+      src={`/assets/${figure.fotodofigure}`}
       alt="171x180"
     />
     <div className='letras'>
     <Figure.Caption>
     <p>{figure.nome}</p>
+              
     </Figure.Caption>
     </div>
   </Figure>
