@@ -57,7 +57,6 @@ import Logo from '../Logo';
         <div className='cardinfo'>
           <div className='nome'>
           <h1>{pontos.name}</h1>
-          <h1>{pontos.name}</h1>
           </div>
           <p>{pontos.sobre}</p>
           </div>

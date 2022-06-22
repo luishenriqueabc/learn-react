@@ -45,8 +45,8 @@ const FormFigure = ({figure, setFigure}) => {
    <label>Foto: </label> <input  ref={fotoRef} type="text" name="foto"/>
    <label>Nome : </label><input ref={nomeRef} type="text" name="nome"/>
    <label>Nome 2: </label><input ref={nome2Ref} type="text" name="nome2"/>
-   <label>Nome 3 : </label><input ref={nome3Ref} type="text" name="nome3"/>
-   <label>Nome 4: </label><input ref={nome4Ref} type="text" name="nome4"/>
+   <label>Nome 3 :</label><input ref={nome3Ref} type="text" name="nome3"/>
+   <label>Nome 4:</label><input ref={nome4Ref} type="text" name="nome4"/>
   
       <input type="submit" value="Enviar" />
     </form>

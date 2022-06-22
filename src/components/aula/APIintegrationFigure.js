@@ -38,7 +38,7 @@ import Logo from '../Logo';
     return (
     <>
     <Logo />
-    <h1> ADMIN</h1>
+    <h1> ADMIN FIGURE</h1>
     <div className="form">
     <FormsFigure setFigure={setFigure} figure={figure}/>
     </div>
@@ -48,20 +48,18 @@ import Logo from '../Logo';
     return (
     <div key={figure.id}>
     <div className='card'>
-        <IconTrash onClick={() => handleTrashClick(figure.id)}
-      style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto'}}/>
-        <IconEdit onClick={() => navigate('../edit/'+figure.id)}
-      style={{cursor: 'pointer',  color:'black', marginLeft:'auto', marginRight:'auto'}}>
-        </IconEdit>
-        <h1>{figure.foto}</h1>
-        <h1>{figure.nome}</h1>
-        <h1>{figure.nome2}</h1>
-        <h1>{figure.nome3}</h1>
-        <h1>{figure.nome4}</h1>
-    
+    <IconTrash onClick={() => handleTrashClick(figure.id)}
+    style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto'}}/>
+    <IconEdit onClick={() => navigate('/figureadm/edit/'+figure.id)}
+    style={{cursor: 'pointer',  color:'black', marginLeft:'auto', marginRight:'auto'}}>
+    </IconEdit>
+    <h1>{figure.foto}</h1>
+    <h1>{figure.nome}</h1>
+    <h1>{figure.nome2}</h1>
+    <h1>{figure.nome3}</h1>
+    <h1>{figure.nome4}</h1>
     </div>
     </div>
-  
     )
     }
     )}
@@ -69,6 +67,4 @@ import Logo from '../Logo';
     </>
     )
     }
-
-
 export default APIIntegrationFigure;

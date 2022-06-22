@@ -3,6 +3,7 @@ import './Figure.css';
 import { useEffect, useState } from "react";
 import {Figure} from 'react-bootstrap'
 import {useNavigate, UseNavigate} from 'react-router-dom';
+
 const FiguresController = ({figureId}) =>{
 
   const [figure, setFigure] = useState(null);
@@ -32,8 +33,20 @@ const FiguresController = ({figureId}) =>{
     />
     <div className='letras'>
     <Figure.Caption>
-    <p>{figure.nome}</p>     
+    <p onClick={() => navigate('../PagP:paginapontosId')}>{figure.nome}</p>     
     </Figure.Caption>
+    <Figure.Caption>
+    <p>{figure.nome2}</p>     
+    </Figure.Caption>
+    <Figure.Caption>
+    <p>{figure.nome3}</p>     
+    </Figure.Caption>
+    <Figure.Caption>
+    <p>{figure.nome4}</p>     
+    </Figure.Caption>
+    
+  
+
     
     </div>
     </div>
