@@ -25,18 +25,21 @@ const FiguresController = ({figureId}) =>{
 
   <div className="figur">
   <Figure>
+  <div key={figure.id}>
     <Figure.Image
-      src={`/assets/${figure.fotodofigure}`}
+      src={`/assets/${figure.foto}`}
       alt="171x180"
     />
     <div className='letras'>
     <Figure.Caption>
-    <p>{figure.nome}</p>
-              
+    <p>{figure.nome}</p>     
     </Figure.Caption>
+    
+    </div>
     </div>
   </Figure>
   </div>
+  
 
          </>
     )
