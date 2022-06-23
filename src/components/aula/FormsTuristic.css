@@ -1,9 +1,10 @@
 .aba{
     display: flex;
-  flex-direction: column;
+    flex-wrap: wrap;
     border:1px solid black;
-    padding: 10px;
+    padding: 10px 550px;
     text-align: center;
+    align-items: center;
     justify-content: center;
     align-items: center;
     justify-self: center;
@@ -11,7 +12,7 @@
 .aba input{
     border:1px solid black;
     background-color:  rgb(46, 130, 255);
-    width:200px;
+    width:150px;
     margin-bottom: 30px;
     height:30px;
     border-radius: 20px;
@@ -21,4 +22,11 @@
 .aba ::placeholder{
     font-size: 20px;
     color:white;
+}
+ .buto{
+    background-color: black ;
+    color:white;
+    font-size:30px;
+    border-radius: 20px;
+    padding:0 10px;
 }

@@ -4,17 +4,17 @@ import {useState } from 'react';
 import {useEffect } from 'react';
 // import teste from '../assets/teste.jpeg';
 
-function ControlledCarouselPaginaPonto({postId}) {
+function ControlledCarouselPaginaPonto({ PaginaPontosId}) {
   const [index, setIndex] = useState(0);
   const [paginaponto, setPaginaPontos] = useState(null);
   const handleSelect = (selectedIndex, e) => {
   setIndex(selectedIndex);
   };
   useEffect(() => {
-  fetch("http://localhost/LP2/api/paginapontos/select-by-id/?id=" + postId)
+  fetch("http://localhost/LP2/api/paginapontos/select-by-id/?id=" +  PaginaPontosId)
   .then((response) => response.json())
   .then((data) => setPaginaPontos(data))
-  }, [postId])
+  }, [ PaginaPontosId])
   return (
   <> 
   {paginaponto && (

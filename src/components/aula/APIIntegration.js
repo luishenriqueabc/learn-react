@@ -7,7 +7,8 @@ import {TiEdit as IconEdit} from 'react-icons/ti'
 import "./APIIntegration.css";
 import ControlledCarousel from '../Carousel';
 import Form from '../Form';
-import Logo from '../Logo';
+import LogoADM from '../LogoADM';
+import Footer from '../Footer';
 
     const APIIntegration = () => {
     const [pontos, setPontos] = useState(null);
@@ -37,7 +38,7 @@ import Logo from '../Logo';
     }
     return (
     <>
-    <Logo />
+    <LogoADM />
     <h1> ADMIN</h1>
     <div className="form">
     <FormsTuristic setPontos={setPontos} pontos={pontos}/>
@@ -84,6 +85,7 @@ import Logo from '../Logo';
           })
         }
         </div>
+        <Footer />
         </>
       )
     }

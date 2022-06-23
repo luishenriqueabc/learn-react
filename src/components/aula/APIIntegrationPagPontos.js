@@ -5,9 +5,11 @@ import { useNavigate } from 'react-router-dom'
 import {BsTrash as IconTrash} from "react-icons/bs"
 import {TiEdit as IconEdit} from 'react-icons/ti'
 import "./APIIntegration.css";
-import ControlledCarousel from '../Carousel';
+import ControlledCarouselPaginaPonto from '../CarouselPagPonto';
+
 import Form from '../Form';
-import Logo from '../Logo';
+import LogoADM from '../LogoADM';
+import Footer from '../Footer';
 
     const APIIntegrationPagpontos = () => {
     const [paginapontos, setPaginaPontos] = useState(null);
@@ -37,8 +39,8 @@ import Logo from '../Logo';
     }
     return (
     <>
-    <Logo />
-    <h1> ADMIN</h1>
+    <LogoADM />
+    <h1> ADMIN Paginas</h1>
     <div className="form">
     <FormsPagPonto setPaginaPontos={setPaginaPontos} paginapontos={paginapontos}/>
     </div>
@@ -50,10 +52,10 @@ import Logo from '../Logo';
         <div className='card'>
         <IconTrash onClick={() => handleTrashClick(paginapontos.id)}
       style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto'}}/>
-        <IconEdit onClick={() => navigate('/pagadm'+paginapontos.id)}
+        <IconEdit onClick={() => navigate('/admpagina/'+ paginapontos.id)}
       style={{cursor: 'pointer',  color:'black', marginLeft:'auto', marginRight:'auto'}}>
         </IconEdit>
-        <ControlledCarousel  PaginaPontosId={paginapontos.id}/>
+        <ControlledCarouselPaginaPonto PaginaPontosId={paginapontos.id}/>
         <div className='cardinfo'>
           <div className='nome'>
           <h1>{paginapontos.name}</h1>
@@ -84,6 +86,7 @@ import Logo from '../Logo';
           })
         }
         </div>
+        <Footer />
         </>
       )
     }

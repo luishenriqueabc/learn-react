@@ -3,14 +3,14 @@ import { useParams, useNavigate } from 'react-router-dom'
 
 const EditPaginaPontoOnChange = () => {
 
-    const { paginapontosId } = useParams()
+    const { PaginaPontosId } = useParams()
     const [paginapontos, setPaginaPontos] = useState()
     const navigate = useNavigate()
 
 
 
     useEffect(() => {
-        fetch("http://localhost/lp2/api/paginapontos/select-by-id/?id="+ paginapontosId)
+        fetch("http://localhost/lp2/api/paginapontos/select-by-id/?id=" + PaginaPontosId)
             .then((response) => {
                 if (response.ok) {
                 return response.json();
@@ -21,12 +21,12 @@ const EditPaginaPontoOnChange = () => {
             .catch((error) => {
                 console.log(error);
             })
-    }, [paginapontosId]);
+    }, [PaginaPontosId]);
 
     const handleSubmit = (event) => {
         event.preventDefault()
         const formData = new FormData()
-        formData.append('id', paginapontosId)
+        formData.append('id', PaginaPontosId)
         formData.append('foto', event.target[0].value);
         formData.append('foto2', event.target[1].value);
         formData.append('foto3', event.target[2].value)
@@ -41,7 +41,7 @@ const EditPaginaPontoOnChange = () => {
             .then((response) => response.json())
             .then((data) => {
                 if(data?.paginapontos?.id){
-                    navigate('//paginaadm');
+                    navigate('/paginaadm');
                     //setpontos(clearUserValue)
                 } else if(data?.message){
                     alert(data.message)
@@ -71,7 +71,7 @@ const EditPaginaPontoOnChange = () => {
     </form>
     )
     : 
-        (<p>Usuário não encontrado!</p>)
+    (<p>Usuário não encontrado!</p>)
     }
     </>
     )

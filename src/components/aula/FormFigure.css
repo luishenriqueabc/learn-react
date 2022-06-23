@@ -1,4 +1,25 @@
-.all{
-    background-color:blue;
-    display:flex;
+.abacaxi{
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid black;
+    padding: 10px 550px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+.abacaxi input{
+    border:1px solid black;
+    background-color:  rgb(46, 130, 255);
+    width:100px;
+    margin-bottom: 30px;
+    height:30px;
+    border-radius: 20px;
+    color:white;
+
+}
+.abacaxi ::placeholder{
+    font-size: 20px;
+    color:white;
 }

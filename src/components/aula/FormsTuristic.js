@@ -1,4 +1,5 @@
 import { useRef, useEffect} from 'react'
+import { Placeholder } from 'react-bootstrap';
 import './FormsTuristic.css';
 
 const FormPontos = ({pontos, setPontos}) => {
@@ -20,11 +21,11 @@ const FormPontos = ({pontos, setPontos}) => {
     const formData = new FormData();
     formData.append('foto', event.target[0].value);
     formData.append('foto2', event.target[1].value);
-    formData.append('foto3', event.target[1].value)
-    formData.append('name', event.target[1].value);
-    formData.append('sobre', event.target[1].value);
-    formData.append('pertence', event.target[1].value);
-    formData.append('quantaspessoas', event.target[1].value);
+    formData.append('foto3', event.target[2].value)
+    formData.append('name', event.target[3].value);
+    formData.append('sobre', event.target[4].value);
+    formData.append('pertence', event.target[5].value);
+    formData.append('quantaspessoas', event.target[6].value);
     fetch(
       "http://localhost/lp2/api/pontos/create",
       {method: 'POST', body: formData}
@@ -45,16 +46,19 @@ const FormPontos = ({pontos, setPontos}) => {
   } 
 
   return (
+  <>
+  
     <form className='aba' onSubmit={(event) => handleSubmit(event)}>
-   <label>Foto: </label> <input  ref={fotoRef} type="text" name="foto"/>
-   <label>Foto 2: </label><input ref={foto2Ref} type="text" name="foto2"/>
-   <label>Foto 3: </label><input  ref={foto3Ref} type="text" name="foto3"/>
-   <label>Nome : </label><input ref={nameRef} type="text" name="name"/>
-   <label>Sobre : </label><input  ref={sobreRef} type="text" name="sobre"/>
-   <label>Pertence : </label><input ref={pertenceRef} type="text" name="pertence"/>
-   <label>Quantas Pessoas ? : </label><input ref={quantaspessoasRef} type="text" name="quantaspessoas"/>
-      <input type="submit" value="Enviar" />
+   <input placeholder='Foto' ref={fotoRef} type="text" name="foto"/>
+   <input placeholder='Foto2' ref={foto2Ref} type="text" name="foto2"/>
+  <input placeholder='Foto3' ref={foto3Ref} type="text" name="foto3"/>
+  <input placeholder='Nome' ref={nameRef} type="text" name="name"/>
+ <input placeholder='Sobre' ref={sobreRef} type="text" name="sobre"/>
+   <input placeholder='Pertence?' ref={pertenceRef} type="text" name="pertence"/>
+   <input placeholder='Visitas'ref={quantaspessoasRef} type="text" name="quantaspessoas"  style={{marginRight: '180px'}}/>
+      <input type="submit" value="Enviar"  style={{cursor: 'pointer',  color:'white',backgroundColor:'black'}}/>
     </form>
+      </>
   )
 }
 

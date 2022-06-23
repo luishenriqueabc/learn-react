@@ -7,7 +7,8 @@ import {TiEdit as IconEdit} from 'react-icons/ti'
 import "./APIIntegration.css";
 import ControlledCarousel from '../Carousel';
 import Form from '../Form';
-import Logo from '../Logo';
+import LogoADM from '../LogoADM';
+import Footer from '../Footer';
 
 
     const APIIntegrationFigure = () => {
@@ -37,7 +38,7 @@ import Logo from '../Logo';
     }  
     return (
     <>
-    <Logo />
+    <LogoADM />
     <h1> ADMIN FIGURE</h1>
     <div className="form">
     <FormsFigure setFigure={setFigure} figure={figure}/>
@@ -50,7 +51,7 @@ import Logo from '../Logo';
     <div className='card'>
     <IconTrash onClick={() => handleTrashClick(figure.id)}
     style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto'}}/>
-    <IconEdit onClick={() => navigate('/figureadm/edit/'+figure.id)}
+    <IconEdit onClick={() => navigate('/figureadm/'+figure.id)}
     style={{cursor: 'pointer',  color:'black', marginLeft:'auto', marginRight:'auto'}}>
     </IconEdit>
     <h1>{figure.foto}</h1>
@@ -64,6 +65,7 @@ import Logo from '../Logo';
     }
     )}
     </div>
+    <Footer />
     </>
     )
     }

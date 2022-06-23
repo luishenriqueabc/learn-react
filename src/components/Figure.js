@@ -9,10 +9,6 @@ const FiguresController = ({figureId}) =>{
   const [figure, setFigure] = useState(null);
   const navigate = useNavigate();
 
-
-
-
-  
   useEffect(() => {
     fetch("http://localhost/LP2/api/figure/select-by-id/?id=" + figureId)
     .then((response) => response.json())
@@ -33,16 +29,16 @@ const FiguresController = ({figureId}) =>{
     />
     <div className='letras'>
     <Figure.Caption>
-    <p onClick={() => navigate('../PagP:paginapontosId')}>{figure.nome}</p>     
+    <p onClick={() => navigate('/pag1:paginapontosId')}>{figure.nome}</p>     
     </Figure.Caption>
     <Figure.Caption>
-    <p>{figure.nome2}</p>     
+    <p  onClick={() => navigate('/pag2:paginapontosId')}>{figure.nome2}</p>     
     </Figure.Caption>
     <Figure.Caption>
-    <p>{figure.nome3}</p>     
+    <p  onClick={() => navigate('/pag3:paginapontosId')}>{figure.nome3}</p>     
     </Figure.Caption>
     <Figure.Caption>
-    <p>{figure.nome4}</p>     
+    <p  onClick={() => navigate('/pag4:paginapontosId')}>{figure.nome4}</p>     
     </Figure.Caption>
     
   

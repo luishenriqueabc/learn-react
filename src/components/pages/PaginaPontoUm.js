@@ -6,14 +6,14 @@ import ControlledCarouselPaginaPonto from '../CarouselPagPonto';
 import Logo from '../Logo.js';
 import Footer from '../Footer.js';
 
-const PaginaUm = (postId) =>{
+const PaginaUm = ({PaginaPontosId}) =>{
   const [paginapontos, setPaginaPontos] = useState(null)
   const navigate = useNavigate();
     useEffect(() => {
-    fetch("http://localhost/LP2/api/paginapontos/select-by-id/?id=1" + postId)
+    fetch("http://localhost/LP2/api/paginapontos/select-by-id/?id=15" + PaginaPontosId)
     .then((response) => response.json())
     .then((data) => setPaginaPontos(data))
-    }, [postId])
+    }, [ PaginaPontosId])
     return(
     <>
     <Logo />
@@ -21,7 +21,7 @@ const PaginaUm = (postId) =>{
     <>
     <div key={paginapontos.id}>
     <div className='card'>
-    <ControlledCarouselPaginaPonto postId={paginapontos.id}/>
+    <ControlledCarouselPaginaPonto  PaginaPontosId={paginapontos.id}/>
     <div className='cardinfo'>
     <div className='nome'>
     <h1>{paginapontos.name}</h1>

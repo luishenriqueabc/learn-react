@@ -1,5 +1,5 @@
 import { useRef, useEffect} from 'react'
-import './FormsTuristic.css';
+import './FormFigure.css';
 
 const FormFigure = ({figure, setFigure}) => {
   const fotoRef = useRef();
@@ -41,14 +41,14 @@ const FormFigure = ({figure, setFigure}) => {
   } 
 
   return (
-    <form className='aba' onSubmit={(event) => handleSubmit(event)}>
-   <label>Foto: </label> <input  ref={fotoRef} type="text" name="foto"/>
-   <label>Nome : </label><input ref={nomeRef} type="text" name="nome"/>
-   <label>Nome 2: </label><input ref={nome2Ref} type="text" name="nome2"/>
-   <label>Nome 3 :</label><input ref={nome3Ref} type="text" name="nome3"/>
-   <label>Nome 4:</label><input ref={nome4Ref} type="text" name="nome4"/>
+    <form className='abacaxi' onSubmit={(event) => handleSubmit(event)}>
+    <input placeholder='Foto' ref={fotoRef} type="text" name="foto"/>
+   <input placeholder='Nome'ref={nomeRef} type="text" name="nome"/>
+   <input placeholder='Nome2'ref={nome2Ref} type="text" name="nome2"/>
+   <input placeholder='Nome3' ref={nome3Ref} type="text" name="nome3"/>
+   <input placeholder='Nome4'ref={nome4Ref} type="text" name="nome4"/>
   
-      <input type="submit" value="Enviar" />
+   <input type="submit" value="Enviar"  style={{cursor: 'pointer',  color:'white',backgroundColor:'black'}}/>
     </form>
   )
 }

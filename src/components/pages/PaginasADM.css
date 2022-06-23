@@ -1,0 +1,11 @@
+.Paginas ul{
+display: flex;
+gap:50px;
+}
+.Paginas li{
+margin-left: auto;
+margin-right: auto;
+list-style: none;
+text-align: center;
+}
+
