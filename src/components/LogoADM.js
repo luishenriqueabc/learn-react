@@ -14,16 +14,16 @@ const Logo = () => {
     <Nav.Link href="/admin">ADMIN</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link href="/pontosadm">Pontos ADM</Nav.Link>
+    <Nav.Link href="/pontosadm">PONTOS ADM</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link href="/figureadm">Figure ADM</Nav.Link>
+    <Nav.Link href="/figureadm">FIGURE ADM</Nav.Link>
   </Nav.Item>    
   <Nav.Item>
-    <Nav.Link href="/commentadm">Comentario ADM</Nav.Link>
+    <Nav.Link href="/commentadm">COMENTÁRIO ADM</Nav.Link>
   </Nav.Item>    
   <Nav.Item>
-    <Nav.Link href="/paginaadm">Pagina Pontos ADM</Nav.Link>
+    <Nav.Link href="/paginaadm">PÁGINA PONTOS ADM</Nav.Link>
   </Nav.Item>    
   </Nav>      
             </ul>

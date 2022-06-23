@@ -35,6 +35,8 @@ import Footer from '../Footer';
         return (
             <>
             <LogoADM />
+
+            <h1>ADMIN COMENTÁRIO</h1>
         {comment &&
         comment.map((comment) => {
         return (

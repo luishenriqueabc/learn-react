@@ -11,7 +11,7 @@ const Logo = () => {
             <ul>
             <Nav variant="pills" defaultActiveKey="/home">
   <Nav.Item>
-    <Nav.Link eventKey="/">HOME</Nav.Link>
+    <Nav.Link eventKey="/"><Link to='/home'>HOME</Link></Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link href="/contatos">CONTATOS</Nav.Link>

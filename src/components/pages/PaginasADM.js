@@ -5,13 +5,10 @@ import LogoADM from '../LogoADM';
 
 
 const PaginasADM = () => {
-    return(
-        <>
- <LogoADM />
-     
-
-        </>
-
-    )
+return(
+<>
+<LogoADM />
+</>
+)
 }
 export default PaginasADM;

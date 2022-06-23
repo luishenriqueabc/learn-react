@@ -9,11 +9,6 @@ const Nav = () =>{
     <div className='imagempro'>
         <img src={Imagem} alt="teste"/>
     </div>
-
-    <div className='search'>
-        <input type='text' placeholder='Pesquise um ponto turistico..'></input>
-        <img src={lupa} width='30'/>
-    </div>
     </>
     )
 }

@@ -1,6 +1,6 @@
 import { useRef, useEffect} from 'react'
 import { Placeholder } from 'react-bootstrap';
-import './FormsTuristic.css';
+import './EditPontoOnChange';
 
 const FormPontos = ({pontos, setPontos}) => {
   const fotoRef = useRef();
@@ -49,13 +49,13 @@ const FormPontos = ({pontos, setPontos}) => {
   <>
   
     <form className='aba' onSubmit={(event) => handleSubmit(event)}>
-   <input placeholder='Foto' ref={fotoRef} type="text" name="foto"/>
-   <input placeholder='Foto2' ref={foto2Ref} type="text" name="foto2"/>
-  <input placeholder='Foto3' ref={foto3Ref} type="text" name="foto3"/>
-  <input placeholder='Nome' ref={nameRef} type="text" name="name"/>
- <input placeholder='Sobre' ref={sobreRef} type="text" name="sobre"/>
-   <input placeholder='Pertence?' ref={pertenceRef} type="text" name="pertence"/>
-   <input placeholder='Visitas'ref={quantaspessoasRef} type="text" name="quantaspessoas"  style={{marginRight: '180px'}}/>
+   <input placeholder='Foto:' ref={fotoRef} type="text" name="foto"/>
+   <input placeholder='Foto 2:' ref={foto2Ref} type="text" name="foto2"/>
+  <input placeholder='Foto 3:' ref={foto3Ref} type="text" name="foto3"/>
+  <input placeholder='Nome:' ref={nameRef} type="text" name="name"/>
+ <input placeholder='Sobre:' ref={sobreRef} type="text" name="sobre"/>
+   <input placeholder='Pertence ?:' ref={pertenceRef} type="text" name="pertence"/>
+   <input placeholder='Visitas :'ref={quantaspessoasRef} type="text" name="quantaspessoas" />
       <input type="submit" value="Enviar"  style={{cursor: 'pointer',  color:'white',backgroundColor:'black'}}/>
     </form>
       </>

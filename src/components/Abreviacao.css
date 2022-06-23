@@ -18,3 +18,8 @@
     color: white;
   
 }
+
+#cards{
+    flex-wrap: wrap;
+    gap: 10px 20%;
+}

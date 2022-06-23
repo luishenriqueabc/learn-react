@@ -18,6 +18,7 @@ const Routers = () => {
 return(
 <Routes>
 <Route path="/" element={<PaginaHome />} />
+<Route path="/home" element={<PaginaHome />} />
 <Route path="/contatos" element={<PaginaContatos />} />
 <Route path="/edit/:pontosId" element={<EditPontoOnChange />} />
 <Route path="/commentadm" element={<PaginaCommentADM/>} />

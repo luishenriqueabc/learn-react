@@ -39,7 +39,7 @@ import Footer from '../Footer';
     return (
     <>
     <LogoADM />
-    <h1> ADMIN</h1>
+    <h1> ADMIN PONTOS</h1>
     <div className="form">
     <FormsTuristic setPontos={setPontos} pontos={pontos}/>
     </div>
@@ -50,7 +50,7 @@ import Footer from '../Footer';
         <div key={pontos.id}>
         <div className='card'>
         <IconTrash onClick={() => handleTrashClick(pontos.id)}
-      style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto'}}/>
+      style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto', height:'20px'}}/>
         <IconEdit onClick={() => navigate('../edit/'+pontos.id)}
       style={{cursor: 'pointer',  color:'black', marginLeft:'auto', marginRight:'auto'}}>
         </IconEdit>

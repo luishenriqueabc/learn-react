@@ -3,7 +3,9 @@ import './PaginaCommentADM.css';
 
 const PaginaCommentADM = () =>{
     return(
+        <>
         <APIIntegrationCommentURL/>
+        </>
     )
 }
 export default PaginaCommentADM;

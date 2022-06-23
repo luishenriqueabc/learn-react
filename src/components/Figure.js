@@ -24,33 +24,27 @@ const FiguresController = ({figureId}) =>{
   <Figure>
   <div key={figure.id}>
     <Figure.Image
-      src={`/assets/${figure.foto}`}
-      alt="171x180"
+    src={`/assets/${figure.foto}`}
+    alt="171x180"
     />
-    <div className='letras'>
-    <Figure.Caption>
-    <p onClick={() => navigate('/pag1:paginapontosId')}>{figure.nome}</p>     
-    </Figure.Caption>
-    <Figure.Caption>
-    <p  onClick={() => navigate('/pag2:paginapontosId')}>{figure.nome2}</p>     
-    </Figure.Caption>
-    <Figure.Caption>
-    <p  onClick={() => navigate('/pag3:paginapontosId')}>{figure.nome3}</p>     
-    </Figure.Caption>
-    <Figure.Caption>
-    <p  onClick={() => navigate('/pag4:paginapontosId')}>{figure.nome4}</p>     
-    </Figure.Caption>
-    
-  
-
-    
-    </div>
-    </div>
+  <div className='letras'>
+  <Figure.Caption>
+  <p onClick={() => navigate('/pag1:paginapontosId')}>{figure.nome}</p>     
+  </Figure.Caption>
+  <Figure.Caption>
+  <p  onClick={() => navigate('/pag2:paginapontosId')}>{figure.nome2}</p>     
+  </Figure.Caption>
+  <Figure.Caption>
+  <p  onClick={() => navigate('/pag3:paginapontosId')}>{figure.nome3}</p>     
+  </Figure.Caption>
+  <Figure.Caption>
+  <p  onClick={() => navigate('/pag4:paginapontosId')}>{figure.nome4}</p>     
+  </Figure.Caption>
+  </div>
+  </div>
   </Figure>
   </div>
-  
-
-         </>
+  </>
     )
 }
 </>

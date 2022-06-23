@@ -6,6 +6,7 @@ import {BsTrash as IconTrash} from "react-icons/bs"
 import {TiEdit as IconEdit} from 'react-icons/ti'
 import "./APIIntegration.css";
 import ControlledCarousel from '../Carousel';
+import { Figure } from "react-bootstrap";
 import Form from '../Form';
 import LogoADM from '../LogoADM';
 import Footer from '../Footer';
@@ -43,30 +44,39 @@ import Footer from '../Footer';
     <div className="form">
     <FormsFigure setFigure={setFigure} figure={figure}/>
     </div>
-    <div className='cs'>
-    {figure &&
-    figure.map((figure) => {
-    return (
-    <div key={figure.id}>
-    <div className='card'>
-    <IconTrash onClick={() => handleTrashClick(figure.id)}
-    style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto'}}/>
-    <IconEdit onClick={() => navigate('/figureadm/'+figure.id)}
-    style={{cursor: 'pointer',  color:'black', marginLeft:'auto', marginRight:'auto'}}>
-    </IconEdit>
-    <h1>{figure.foto}</h1>
-    <h1>{figure.nome}</h1>
-    <h1>{figure.nome2}</h1>
-    <h1>{figure.nome3}</h1>
-    <h1>{figure.nome4}</h1>
+      {figure && (
+          <>
+  <div className="figur">
+  <Figure>
+  <div key={figure.id}>
+    <Figure.Image
+      src={`/assets/${figure.foto}`}
+      alt="171x180"
+    />
+    <div className='letras'>
+    <Figure.Caption>
+    <p>{figure.nome}</p>     
+    </Figure.Caption>
+    <Figure.Caption>
+    <p>{figure.nome2}</p>     
+    </Figure.Caption>
+    <Figure.Caption>
+    <p>{figure.nome3}</p>     
+    </Figure.Caption>
+    <Figure.Caption>
+    <p>{figure.nome4}</p>     
+    </Figure.Caption>
     </div>
     </div>
+  </Figure>
+  </div>
+  </>
     )
-    }
-    )}
-    </div>
-    <Footer />
-    </>
+}
+</>
     )
-    }
+}
+
+
+
 export default APIIntegrationFigure;

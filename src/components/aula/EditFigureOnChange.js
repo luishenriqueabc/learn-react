@@ -55,13 +55,13 @@ const EditFigureOnChange = () => {
     return (
     <>
     {figure ? (
-    <form onSubmit={(event) => handleSubmit(event)}>
-    <label>Foto:</label><input type="text" name="foto" value={figure.foto} onChange={handleChange}/>
-    <label>Nome:</label><input type="text" name="nome" value={figure.nome} onChange={handleChange}/>
-    <label>Nome2:</label><input type="text" name="nome2" value={figure.nome2} onChange={handleChange}/>
-    <label>Nome3:</label><input type="text" name="nome3" value={figure.nome3} onChange={handleChange}/>
-    <label>Nome4:</label><input type="text" name="nome4" value={figure.nome4} onChange={handleChange}/>
-    <input type="submit" value="Editar" />
+    <form className='aba' onSubmit={(event) => handleSubmit(event)}>
+ <input type="text" name="foto" value={figure.foto} onChange={handleChange}/>
+   <input type="text" name="nome" value={figure.nome} onChange={handleChange}/>
+    <input type="text" name="nome2" value={figure.nome2} onChange={handleChange}/>
+  <input type="text" name="nome3" value={figure.nome3} onChange={handleChange}/>
+    <input type="text" name="nome4" value={figure.nome4} onChange={handleChange}/>
+    <input type="submit" value="Editar"  style={{cursor: 'pointer',  color:'white',backgroundColor:'black'}}/>
     </form>
     )
     : 

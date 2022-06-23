@@ -14,6 +14,7 @@ const Abreviacaoo = (figureId) =>{
     <div className="abrevi">
     <h1>Cidades</h1>
     </div>
+    <div className='d-flex justify-content-center'>
     {figure &&
     figure.map((figure) => {
     return(
@@ -24,6 +25,7 @@ const Abreviacaoo = (figureId) =>{
     </>
     )
     })}
+    </div>
     </>
     )
     };

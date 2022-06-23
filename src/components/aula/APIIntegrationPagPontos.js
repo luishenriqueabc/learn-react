@@ -40,7 +40,7 @@ import Footer from '../Footer';
     return (
     <>
     <LogoADM />
-    <h1> ADMIN Paginas</h1>
+    <h1> ADMIN PÁGINAS</h1>
     <div className="form">
     <FormsPagPonto setPaginaPontos={setPaginaPontos} paginapontos={paginapontos}/>
     </div>

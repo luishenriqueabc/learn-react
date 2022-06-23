@@ -42,12 +42,12 @@ const FormFigure = ({figure, setFigure}) => {
 
   return (
     <form className='abacaxi' onSubmit={(event) => handleSubmit(event)}>
-    <input placeholder='Foto' ref={fotoRef} type="text" name="foto"/>
-   <input placeholder='Nome'ref={nomeRef} type="text" name="nome"/>
-   <input placeholder='Nome2'ref={nome2Ref} type="text" name="nome2"/>
-   <input placeholder='Nome3' ref={nome3Ref} type="text" name="nome3"/>
-   <input placeholder='Nome4'ref={nome4Ref} type="text" name="nome4"/>
-  
+    <input placeholder='Foto:' ref={fotoRef} type="text" name="foto"/>
+   <input placeholder='Nome:'ref={nomeRef} type="text" name="nome"/>
+   <input placeholder='Nome 2:'ref={nome2Ref} type="text" name="nome2"/>
+   <input placeholder='Nome 3:' ref={nome3Ref} type="text" name="nome3"/>
+   <input placeholder='Nome 4:'ref={nome4Ref} type="text" name="nome4"/>
+
    <input type="submit" value="Enviar"  style={{cursor: 'pointer',  color:'white',backgroundColor:'black'}}/>
     </form>
   )
