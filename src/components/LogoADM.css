@@ -1,7 +1,7 @@
 .superiorr{
     width: 100%;
     display:flex;
-    padding:30px 3%;
+    padding:30px 0;
     height:141px;
     background-color: rgba(46, 130, 255, 0.842);
     color:white;
@@ -17,7 +17,7 @@
 .superiorr ul{
     display:flex;
     font-size:20px;
-    padding-left:200px;
+    padding-left:100px;
  
 }
 .superiorr ul  a{

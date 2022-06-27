@@ -1,11 +1,11 @@
-import LogoC from '../LogoContatos';
+import Logo from '../Logo';
 import MainC from '../MainC';
 
 
 const paginaContatos = () =>{
     return(
         <>
-       <LogoC/>
+      <Logo />
        <MainC/>
         </>
     )

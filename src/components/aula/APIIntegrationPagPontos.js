@@ -51,9 +51,9 @@ import Footer from '../Footer';
         <div key={paginapontos.id}>
         <div className='card'>
         <IconTrash onClick={() => handleTrashClick(paginapontos.id)}
-      style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto'}}/>
+      style={{cursor: 'pointer', color:'white',marginLeft:'auto', marginRight:'auto'}}/>
         <IconEdit onClick={() => navigate('/admpagina/'+ paginapontos.id)}
-      style={{cursor: 'pointer',  color:'black', marginLeft:'auto', marginRight:'auto'}}>
+      style={{cursor: 'pointer',  color:'white', marginLeft:'auto', marginRight:'auto'}}>
         </IconEdit>
         <ControlledCarouselPaginaPonto PaginaPontosId={paginapontos.id}/>
         <div className='cardinfo'>

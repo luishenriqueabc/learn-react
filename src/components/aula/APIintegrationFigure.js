@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
 import FormsFigure from '../aula/FormFigure';
-import {BsTrash} from "react-icons/bs";
-import { useNavigate } from 'react-router-dom'
-import {BsTrash as IconTrash} from "react-icons/bs"
-import {TiEdit as IconEdit} from 'react-icons/ti'
-import "./APIIntegration.css";
-import ControlledCarousel from '../Carousel';
-import { Figure } from "react-bootstrap";
-import Form from '../Form';
+import "../Figure.css";
 import LogoADM from '../LogoADM';
+import {TiEdit as IconEdit} from 'react-icons/ti'
+import {BsTrash as IconTrash} from "react-icons/bs"
+import {Figure} from 'react-bootstrap'
+import {useNavigate, UseNavigate} from 'react-router-dom';
 import Footer from '../Footer';
 
 
@@ -44,39 +41,45 @@ import Footer from '../Footer';
     <div className="form">
     <FormsFigure setFigure={setFigure} figure={figure}/>
     </div>
-      {figure && (
-          <>
-  <div className="figur">
-  <Figure>
-  <div key={figure.id}>
-    <Figure.Image
-      src={`/assets/${figure.foto}`}
-      alt="171x180"
-    />
-    <div className='letras'>
-    <Figure.Caption>
-    <p>{figure.nome}</p>     
-    </Figure.Caption>
-    <Figure.Caption>
-    <p>{figure.nome2}</p>     
-    </Figure.Caption>
-    <Figure.Caption>
-    <p>{figure.nome3}</p>     
-    </Figure.Caption>
-    <Figure.Caption>
-    <p>{figure.nome4}</p>     
-    </Figure.Caption>
-    </div>
-    </div>
-  </Figure>
-  </div>
-  </>
+<>
+    {figure &&
+    figure.map((figure) => {
+    return (
+        <div className="figur">
+        <Figure>
+             <IconTrash onClick={() => handleTrashClick(figure.id)}
+    style={{cursor: 'pointer', color:'black',marginLeft:'auto', marginRight:'auto'}}/>
+    <IconEdit onClick={() => navigate('/figureadm/'+figure.id)}
+    style={{cursor: 'pointer',  color:'black', marginLeft:'auto', marginRight:'auto'}}>
+    </IconEdit>
+        <div key={figure.id}>
+          <Figure.Image
+          src={`/assets/${figure.foto}`}
+          alt="171x180"
+          />
+        <div className='letras'>
+        <Figure.Caption>
+        <p onClick={() => navigate('/pag1:paginapontosId')}>{figure.nome}</p>     
+        </Figure.Caption>
+        <Figure.Caption>
+        <p  onClick={() => navigate('/pag2:paginapontosId')}>{figure.nome2}</p>     
+        </Figure.Caption>
+        <Figure.Caption>
+        <p  onClick={() => navigate('/pag3:paginapontosId')}>{figure.nome3}</p>     
+        </Figure.Caption>
+        <Figure.Caption>
+        <p  onClick={() => navigate('/pag4:paginapontosId')}>{figure.nome4}</p>     
+        </Figure.Caption>
+        </div>
+        </div>
+        </Figure>
+        </div>
     )
-}
-</>
+    }
+    )}
+   </>
+    <Footer />
+    </>
     )
-}
-
-
-
+    }
 export default APIIntegrationFigure;
